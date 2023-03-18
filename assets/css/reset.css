@@ -1,0 +1,18 @@
+* {
+  font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+html,
+body {
+  background: #2a303b;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+}

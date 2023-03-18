@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio|Douglas Guimarães</title>
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/scrollbar.css" />
+    <link rel="stylesheet" href="/assets/css/float-header.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="/assets/css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header class="c-header">
+      <nav class="c-header__menu">
+        <ul class="c-header__links">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#abilities">Abilities</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a
+              class="material-symbols-rounded c-header__theme-mode js-header__theme-mode"
+              onclick="switchTheme()"
+              >dark_mode</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="c-home">
+        <aside>
+          <h1 id="c-home__title">
+            What can I do for you?<span id="mutable">a website</span>
+          </h1>
+        </aside>
+      </section>
+      <section id="about" class="c-about">
+        <aside><h1></h1></aside>
+      </section>
+      <section id="abilities" class="c-abilities"></section>
+      <section id="contact" class="c-contact"></section>
+      <section id="projects" class="c-projects"></section>
+    </main>
+  </body>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script src="/assets/js/typedConfig.js"></script>
+  <script src="/assets/js/main.js"></script>
+</html>
