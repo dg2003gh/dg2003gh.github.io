@@ -1,0 +1,25 @@
+.c-about {
+  display: flex;
+  background-color: var(--clr-about-section);
+  align-items: center;
+}
+
+.c-about__container {
+  display: inherit;
+  justify-content: space-around;
+}
+
+.c-about__title {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.c-about__text {
+  text-align: center;
+  width: 50%;
+}
+
+.c-about__photo {
+  padding: 50px;
+  animation: floating-animation 5000ms infinite linear;
+}

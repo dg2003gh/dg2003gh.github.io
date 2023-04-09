@@ -1,6 +1,22 @@
+:root {
+  --clr-header: transparent;
+  --clr-hide-header: #00000042;
+  --clr-home-section: #f3e5da;
+  --clr-about-section: #f3b17f;
+  --clr-skills-section: #e9d4c1;
+  --clr-contact-section: #dbc2ac;
+  --clr-projects-section: #d1b7a0;
+  --clr-box-shadow: #00000042;
+}
+
+.dark-mode {
+  --clr-header: #00000015;
+}
+
 * {
   font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +25,7 @@
 
 html,
 body {
-  background: #2a303b;
+  background: var(--clr-html);
   scroll-behavior: smooth;
 }
 

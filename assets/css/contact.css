@@ -1,0 +1,17 @@
+.c-contact {
+  display: flex;
+  background-color: var(--clr-contact-section);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-contact__title {
+  font-size: 50px;
+}
+
+.c-contact__links {
+  display: flex;
+  scale: 2;
+  list-style: none;
+}

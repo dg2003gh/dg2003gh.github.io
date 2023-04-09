@@ -1,0 +1,14 @@
+.c-home {
+  background-color: var(--clr-home-section);
+}
+
+.c-home__aside {
+  padding: 130px;
+  padding-left: 25px;
+  width: 50%;
+  height: 100vh;
+}
+
+.c-home__title {
+  font-size: 55px;
+}
