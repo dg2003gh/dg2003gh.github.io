@@ -1,3 +1,83 @@
 .c-projects {
-  background-color: var(--clr-projects-section);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-projects__title {
+  font-size: 50px;
+}
+
+.c-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  background-color: var(--clr-secondary);
+  width: 50vw;
+  height: 400px;
+  margin-top: 50px;
+  border-radius: var(--border-radius);
+  
+}
+
+.c-projects__card {
+  display: flex;
+  background-color: var(--clr-cards);
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  
+}
+
+.c-projects__textfield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 0%;
+  height: 100%;
+  background-color: var(--clr-cards-before);
+  border-radius: var(--border-radius);
+  transition: width  500ms ;
+
+}
+
+.c-projects__text {
+  position: absolute;
+  width: 170px;
+  height: 100px;
+  font-size: 0px;
+  margin: 12px;
+  transition: font-size 120ms;
+}
+
+.c-projects__card:hover .c-projects__textfield {
+  width: 100%;
+} 
+
+.c-projects__card:hover .c-projects__text {
+  font-size: 15px;
+}
+
+.c-projects__icon {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: color 500ms;
+}
+
+.c-projects__card:hover .c-projects__icon {
+  animation: jumpy-animation 1000ms infinite linear;
+  
+} 
+
+.c-projects__card:nth-child(1):hover .c-projects__icon {
+  color: red;
+}
+
+.c-projects__card:nth-child(2):hover .c-projects__icon {
+  color: purple;
 }

@@ -1,10 +1,14 @@
 var typed = new Typed("#mutable", {
   strings: [
-    "A website for your store",
-    "An app for manage your stoke",
-    "A Game",
-    "everything",
+    "A website.",
+    "An mobile app. ",
+    "A Game.",
+    "A design.",
+    "A 3D model.",
+    "A bot.",
+    "everything.",
   ],
   typeSpeed: 150,
+  backSpeed: 150,
   loop: true,
 });

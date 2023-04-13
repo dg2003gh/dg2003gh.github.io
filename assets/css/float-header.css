@@ -68,3 +68,11 @@
   cursor: pointer;
   animation: jumpy-animation 2000ms infinite;
 }
+
+.c-header__languages{
+  background-color: transparent;
+  font-size: 18px;
+  border: transparent;
+  margin-top: 5px;
+  margin-left: 20px;
+}

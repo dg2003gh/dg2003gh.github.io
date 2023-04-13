@@ -1,6 +1,5 @@
 .c-contact {
   display: flex;
-  background-color: var(--clr-contact-section);
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -10,8 +9,79 @@
   font-size: 50px;
 }
 
-.c-contact__links {
+.c-contact__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  background-color: var(--clr-secondary);
+  width: 60vw;
+  height: 500px;
+  margin-top: 50px;
+  border-radius: var(--border-radius);
+  
+}
+
+.c-contact__card {
   display: flex;
-  scale: 2;
-  list-style: none;
+  background-color: var(--clr-cards);
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  
+}
+
+.c-contact__textfield {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 0%;
+  height: 100%;
+  background-color: var(--clr-cards-before);
+  border-radius: var(--border-radius);
+  transition: width 500ms ;
+
+}
+
+.c-contact__text {
+  position: absolute;
+  font-size: 0px;
+  width: 200px;
+  height: 100px;
+  margin: 12px;
+  transition: font-size 120ms;
+}
+
+.c-contact__card:hover .c-contact__textfield {
+  width: 100%;
+} 
+
+.c-contact__card:hover .c-contact__text {
+  font-size: 15px;
+}
+
+.c-contact__icon {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: color 500ms;
+}
+
+.c-contact__card:hover .c-contact__icon {
+  animation: jumpy-animation 1000ms infinite linear;
+  
+} 
+
+.c-contact__card:nth-child(1):hover .c-contact__icon {
+  color: #006fb0;
+}
+
+.c-contact__card:nth-child(2):hover .c-contact__icon {
+  color: green;
+}
+
+.c-contact__card:nth-child(3):hover .c-contact__icon {
+  color: #0a4c72;
 }
