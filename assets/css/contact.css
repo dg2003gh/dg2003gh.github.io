@@ -26,7 +26,6 @@
   background-color: var(--clr-cards);
   margin: 15px;
   align-items: center;
-  justify-content: center;
   border-radius: var(--border-radius);
   cursor: pointer;
   
@@ -37,11 +36,11 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 0%;
+  width: 10%;
   height: 100%;
   background-color: var(--clr-cards-before);
   border-radius: var(--border-radius);
-  transition: width 500ms ;
+  transition: width 600ms ;
 
 }
 
@@ -51,7 +50,7 @@
   width: 200px;
   height: 100px;
   margin: 12px;
-  transition: font-size 120ms;
+  transition: font-size 150ms;
 }
 
 .c-contact__card:hover .c-contact__textfield {

@@ -1,5 +1,6 @@
 .c-skills {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -18,7 +19,6 @@
   height: 500px;
   margin-top: 50px;
   border-radius: var(--border-radius);
-  
 }
 
 .c-skills__card {
@@ -26,10 +26,8 @@
   background-color: var(--clr-cards);
   margin: 15px;
   align-items: center;
-  justify-content: center;
   border-radius: var(--border-radius);
   cursor: pointer;
-  
 }
 
 .c-skills__textfield {
@@ -37,26 +35,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 0%;
+  width: 10%;
   height: 100%;
   background-color: var(--clr-cards-before);
   border-radius: var(--border-radius);
-  transition: width 500ms ;
-
+  transition: width 800ms;
 }
 
 .c-skills__text {
   position: absolute;
   font-size: 0px;
   width: 120px;
-  height: 60px;
+  height: 100px;
   margin: 12px;
-  transition: font-size 120ms;
+  transition: font-size 150ms;
 }
 
 .c-skills__card:hover .c-skills__textfield {
   width: 100%;
-} 
+}
 
 .c-skills__card:hover .c-skills__text {
   font-size: 15px;
@@ -71,61 +68,64 @@
 
 .c-skills__card:hover .c-skills__icon {
   animation: jumpy-animation 1000ms infinite linear;
-  
-} 
+}
 
 .c-skills__card:nth-child(1):hover .c-skills__icon {
-  color: yellow;
+  color: #f7df1e;
 }
 
 .c-skills__card:nth-child(2):hover .c-skills__icon {
-  color: orange;
+  color: #e96228;
 }
 
 .c-skills__card:nth-child(3):hover .c-skills__icon {
-  color: #0a4c72;
+  color: #0096dc;
 }
 
 .c-skills__card:nth-child(4):hover .c-skills__icon {
-  color: gold;
+  color: #ffd140;
 }
 
 .c-skills__card:nth-child(5):hover .c-skills__icon {
-  color: #227fb4;
+  color: #3077c5;
 }
 
 .c-skills__card:nth-child(6):hover .c-skills__icon {
-  color: #0e3a53;
+  color: #7377ad;
 }
 
 .c-skills__card:nth-child(7):hover .c-skills__icon {
-  color: green;
+  color: #42944c;
 }
 
 .c-skills__card:nth-child(8):hover .c-skills__icon {
-  color: #0e679b;
+  color: #4588b9;
 }
 
 .c-skills__card:nth-child(9):hover .c-skills__icon {
-  color: #0b7fc2;
+  color: #277c92;
 }
 
 .c-skills__card:nth-child(10):hover .c-skills__icon {
-  color: #ce9b0d;
+  color: #e1790d;
 }
 
 .c-skills__card:nth-child(11):hover .c-skills__icon {
-  color: #311408;
+  color: #6c6240;
 }
 
 .c-skills__card:nth-child(12):hover .c-skills__icon {
-  color: #000000;
+  color: #272e35;
 }
 
 .c-skills__card:nth-child(13):hover .c-skills__icon {
-  color: #000000 ;
+  color: #413434;
 }
 
 .c-skills__card:nth-child(14):hover .c-skills__icon {
-  color: #da9b13;
+  color: #e84d31;
+}
+
+.c-skills__card:nth-child(15):hover .c-skills__icon {
+  color: #59792a;
 }

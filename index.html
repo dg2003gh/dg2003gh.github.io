@@ -4,7 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Douglas Guimarães" />
     <title>Portfolio | Douglas Guimarães</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/imgs/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/imgs/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/imgs/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/imgs/icons/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/icons/favicon.ico"
+      type="image/x-icon"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -13,38 +37,53 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
 
-    <link rel="stylesheet" href="/assets/css/reset.css" />
-    <link rel="stylesheet" href="/assets/css/scrollbar.css" />
-    <link rel="stylesheet" href="/assets/css/float-header.css" />
-    <link rel="stylesheet" href="/assets/css/home.css" />
-    <link rel="stylesheet" href="/assets/css/about.css" />
-    <link rel="stylesheet" href="/assets/css/skills.css" />
-    <link rel="stylesheet" href="/assets/css/contact.css" />
-    <link rel="stylesheet" href="/assets/css/projects.css" />
-    <link rel="stylesheet" href="/assets/css/animations.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/scrollbar.css" />
+    <link rel="stylesheet" href="./assets/css/float-header.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/tip.css" />
+    <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
+    <link rel="stylesheet" href="./assets/css/animations.css" />
   </head>
   <body>
     <header class="c-header js-header">
       <nav class="c-header__menu">
         <ul class="c-header__links">
           <li>
-            <a title="Go to home section" href="#home">Home</a>
+            <a title="Go to home section" href="#home" tabindex="1">Home</a>
           </li>
-          <li><a title="Go to about section" href="#about">About</a></li>
           <li>
-            <a title="Go to skills section" href="#skills">Skills</a>
+            <a title="Go to about section" href="#about" tabindex="2">About</a>
           </li>
-          <li><a title="Go to contact section" href="#contact">Contact</a></li>
           <li>
-            <a title="Go to projects section" href="#projects">Projects</a>
+            <a title="Go to skills section" href="#skills" tabindex="3"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a title="Go to contact section" href="#contact" tabindex="4"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a title="Go to projects section" href="#projects" tabindex="5"
+              >Projects</a
+            >
           </li>
           <li>
             <a
               class="material-symbols-rounded c-header__expand-mode js-header__expand-mode"
               title="Hide header"
               onclick="hideHeader()"
+              tabindex="6"
               >expand_less</a
             >
           </li>
@@ -53,12 +92,17 @@
               class="material-symbols-rounded c-header__theme-mode js-header__theme-mode"
               onclick="switchTheme()"
               title="Toggle theme "
+              tabindex="7"
               >dark_mode</a
             >
           </li>
           <li>
-            <select class="c-header__languages">
-              <option value="en" >🇺🇸</option>
+            <select
+              class="c-header__languages"
+              title="Change website language"
+              tabindex="8"
+            >
+              <option value="en">🇺🇸</option>
               <option value="pt_br">🇧🇷</option>
               <option value="es">🇪🇸</option>
             </select>
@@ -70,286 +114,298 @@
       <section id="home" class="c-home">
         <aside class="c-home__aside">
           <h1 class="c-home__title">
-            What can I do for you? <span id="mutable">a website</span>
+            What can I do for you? <span id="typedText">a website</span>
           </h1>
         </aside>
       </section>
       <section id="about" class="c-about">
-        <main class="c-about__container">
-          <article class="c-about__text">
-            <h1 class="c-about__title">About me</h1>
-            <p>
-              My name is Douglas Guimarães, I'm from Brazil and I'm 20 years
-              old. It all started when I was 14 or 15 years old and my mother
-              bought me an older laptop that came with an old version of a Linux
-              distribution called BigLinux. Initially, I tried to install
-              Windows on it, but this laptop didn't even have a hard drive, so I
-              ended up booting BigLinux from a USB stick. While trying to remove
-              it from the USB stick and install it on my old laptop, I
-              discovered Diolinux (a Brazilian YouTuber) and others who helped
-              me understand Linux.
-            </p>
-            <p>
-              After my laptop broke, I didn't hear about Linux for a long time.
-              I had other computers, but they all had Windows, and I only used
-              them for basic tasks. In 2019, I received a new laptop from my
-              father, and I was so happy about it... until the hard drive burned
-              out. Instead of telling my father and calling for maintenance, I
-              decided to open it up and try to fix it myself. Did I fix it? Of
-              course not! I admit that I can be a bit clueless sometimes. The
-              only way to keep using it was to install Linux, so I installed
-              Linux Mint.
-            </p>
-            <p>
-              This experience made Linux so much more interesting to me. I
-              wanted to enter the beautiful world of technology from a
-              developer's point of view - to learn how to make things instead of
-              just using them. I learned Python, JavaScript, Node.js, Bash, and
-              more. Of course, you don't have to be a developer to use Linux,
-              but using Linux and wanting to learn more about it made me who I
-              am today.
-            </p>
-            <p>
-              Currently, I aspire to be a full-stack developer. I'm a volunteer
-              for the BigLinux distribution (yes, the first distribution I used
-              knowing that it was Linux), and I'm studying information
-              technology while working as a freelancer. You can contact me in
-              the "Contact Me" section and see my skills in the "Skills"
-              section.
-            </p>
-          </article>
-          <article>
-            <img
-              src="./assets/imgs/douglas_photo.png"
-              alt="Douglas photo"
-              class="c-about__photo"
-            />
-          </article>
-        </main>
+        <article class="c-about__text">
+          <h1 class="c-about__title">About me</h1>
+          <p>
+            My name is Douglas Guimarães, I'm from Brazil and I'm 20 years old.
+            It all started when I was 14 or 15 years old and my mother bought me
+            an older laptop that came with an old version of a Linux
+            distribution called BigLinux. Initially, I tried to install Windows
+            on it, but this laptop didn't even have a hard drive, so I ended up
+            booting BigLinux from a USB stick. While trying to remove it from
+            the USB stick and install it on my old laptop, I discovered (a
+            Brazilian YouTuber) and others who helped me understand Linux.
+          </p>
+          <p>
+            After my laptop broke, I didn't hear about Linux for a long time. I
+            had other computers, but they all had Windows, and I only used them
+            for basic tasks. In 2019, I received a new laptop from my father,
+            and I was so happy about it... until the hard drive burned out.
+            Instead of telling my father and calling for maintenance, I decided
+            to open it up and try to fix it myself. Did I fix it? Of course not!
+            I admit that I can be a bit clueless sometimes. The only way to keep
+            using it was to install Linux, so I installed Linux Mint.
+          </p>
+          <p>
+            This experience made Linux so much more interesting to me. I wanted
+            to enter the beautiful world of technology from a developer's point
+            of view - to learn how to make things instead of just using them. I
+            learned Python, JavaScript, Node.js, Bash, and more. Of course, you
+            don't have to be a developer to use Linux, but using Linux and
+            wanting to learn more about it made me who I am today.
+          </p>
+          <p>
+            Currently, I aspire to be a full-stack developer. I'm a volunteer
+            for the BigLinux distribution (yes, the first distribution I used
+            knowing that it was Linux), and I'm studying information technology
+            while working as a freelancer. You can contact me in the "Contact
+            Me" section and see my skills in the "Skills" section.
+          </p>
+          <div class="c-about__bookmark"></div>
+        </article>
+        <article>
+          <img
+            src="./assets/imgs/douglas_photo.png"
+            alt="Douglas photo"
+            width="500px"
+            height="600px"
+            class="c-about__photo"
+          />
+        </article>
+      </section>
+      <section class="c-tip">
+        <h1 class="c-tip__title">
+          Tip: You can Click on any card to go to their websites.
+        </h1>
+        <span class="c-tip__arrows"> </span>
+        <span class="c-tip__arrows"></span>
+        <span class="c-tip__arrows"></span>
       </section>
       <section id="skills" class="c-skills">
-        <main>
-          <article class="c-skills__container">
-            <h1 class="c-skills__title">Skills</h1>
-            <p>Here you can see the technologies that I Work with</p>
-            <div class="c-skills__grid">
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                      Javascript is a 
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-javascript-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                  HTML is a hypertext markdown language.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-html5-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    CSS is a stylesheet technology that allow us to style are HTML document.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-css3-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Python is a simply and intuitive language 
-                    that are used in all world.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-python-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Typescript is a variation of javascript.
-                     The main difference is that is strongly typed.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-typescript-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    PHP is a simple but powerful server side language
-                    that is used in more then 80% of the pages of the internet. 
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-php-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    QT is a powerful c++ framework.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-qt-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Godot is a ponderous game engine.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-godot-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Docker is the most used container... 
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-docker-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Blender is the most famous 3D open-source software of the world.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-blender-original"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Gimp is a powerful open-source image editor.
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-gimp-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                   Bash is the most used shell variant used in the world. 
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-bash-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Linux is the major open-source project of the world, with approximated 
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-linux-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Git is git
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-git-plain"></i>
-              </div>
-              <div class="c-skills__card">
-                <span class="c-skills__textfield">
-                  <p class="c-skills__text">
-                    Git is git
-                  </p>
-                </span>
-                <i class="c-skills__icon devicon-nodejs-plain"></i>
-              </div>
+        <article class="c-skills__container">
+          <h1 class="c-skills__title">Skills</h1>
+          <h2>Here you can see the technologies that I Work with</h2>
+          <div class="c-skills__grid">
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  JavaScript is a versatile language used for web development
+                  and beyond
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-javascript-plain"></i>
             </div>
-          </article>
-        </main>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  HTML is a hypertext Markdown Language used to create websites.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-html5-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  CSS is a stylesheet technology that allows us to style HTML
+                  documents.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-css3-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Python is a simply and intuitive language that is used in all
+                  world.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-python-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Typescript is a variation of javascript. The main difference
+                  is that is strongly typed language.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-typescript-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  PHP is a server side language which powers approximately 80%
+                  of the websites.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-php-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  QT is a powerful C++ framework that allow us to create
+                  cross-platform interfaces .
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-qt-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Godot is a robust open-source game engine used to creating 3D
+                  and 2D games.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-godot-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Docker is a platform for software containerization and
+                  deployment.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-docker-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Blender is the most famous 3D open-source software of the
+                  world.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-blender-original"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Gimp is a free and open-source image editor.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-gimp-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Bash is the most used shell variant in the world.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-bash-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Linux is big a open-source project with approximated 22.000
+                  contributors.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-linux-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Git is version control system for software development.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-git-plain"></i>
+            </div>
+            <div class="c-skills__card">
+              <span class="c-skills__textfield">
+                <p class="c-skills__text">
+                  Node.js is a javascript server-side runtime.
+                </p>
+              </span>
+              <i class="c-skills__icon devicon-nodejs-plain"></i>
+            </div>
+          </div>
+        </article>
       </section>
       <section id="contact" class="c-contact">
-        <main>
-          <article class="c-contact__container">
-            <h1 class="c-contact__title">Contact me</h1>
-            <p>Want to hired me? Well, there's some ways to contact...</p>
-            <div class="c-contact__grid">
-              <div class="c-contact__card">
-                <span class="c-contact__textfield">
-                  <p class="c-contact__text">
-                      My Linkedin is the most formal way to getting in touch with me and see my work.
-                  </p>
-                </span>
-                <i class="c-contact__icon ri-linkedin-box-fill"></i>
-              </div>
-              <div class="c-contact__card">
-                <span class="c-contact__textfield">
-                  <p class="c-contact__text">
-                  This is my E-mail, it's another formal way to find me.
-                  </p>
-                </span>
-                <i class="c-contact__icon ri-mail-fill"></i>
-              </div>
-              <div class="c-contact__card">
-                <span class="c-contact__textfield">
-                  <p class="c-contact__text">
-                    My Telegram is more informal,
-                     for a chill conversation.
-                  </p>
-                </span>
-                <i class="c-contact__icon ri-telegram-fill"></i>
-              </div>
-              <div class="c-contact__card">
-                <span class="c-contact__textfield">
-                  <p class="c-contact__text">
-                    Here are my Discord server, 
-                    That's for my followers 
-                    but feel free to come! 
-                  </p>
-                </span>
-                <i class="c-contact__icon ri-discord-fill"></i>
-              </div>
+        <article class="c-contact__container">
+          <h1 class="c-contact__title">Contact me</h1>
+          <p>Want to hired me? Well, there's some ways to contact...</p>
+          <div class="c-contact__grid">
+            <div class="c-contact__card">
+              <span class="c-contact__textfield">
+                <p class="c-contact__text">
+                  My Linkedin is the most formal way to getting in touch with me
+                  and see my work.
+                </p>
+              </span>
+              <i class="c-contact__icon ri-linkedin-box-fill"></i>
             </div>
-          </article>
-        </main>
+            <div class="c-contact__card">
+              <span class="c-contact__textfield">
+                <p class="c-contact__text">
+                  This is my E-mail, it's another formal way to find me.
+                </p>
+              </span>
+              <i class="c-contact__icon ri-mail-fill"></i>
+            </div>
+            <div class="c-contact__card">
+              <span class="c-contact__textfield">
+                <p class="c-contact__text">
+                  My Telegram is more informal, for a chill conversation.
+                </p>
+              </span>
+              <i class="c-contact__icon ri-telegram-fill"></i>
+            </div>
+            <div class="c-contact__card">
+              <span class="c-contact__textfield">
+                <p class="c-contact__text">
+                  Here are my Discord server, That's for my followers but feel
+                  free to come!
+                </p>
+              </span>
+              <i class="c-contact__icon ri-discord-fill"></i>
+            </div>
+          </div>
+        </article>
       </section>
       <section id="projects" class="c-projects">
-        <main>
-          <article class="c-projects__container">
-            <h1 class="c-projects__title">Projects</h1>
-            <p>There's some personal projects and some that a contribute with periodically. come on, check them out!</p>
-            <div class="c-projects__grid">
-              <div class="c-projects__card">
-                <span class="c-projects__textfield">
-                  <p class="c-projects__text">
-                      That's my Youtube channel,
-                      here I do videos about technology.
-                  </p>
-                </span>
-                <i class="c-projects__icon ri-youtube-fill"></i>
-              </div>
-              <div class="c-projects__card">
-                <span class="c-projects__textfield">
-                  <p class="c-projects__text">
-                  That's my Twitch channel that i do lives programming and chilling .-.
-                  </p>
-                </span>
-                <i class="c-projects__icon ri-twitch-fill"></i>
-              </div>
-              <div class="c-projects__card">
-                <span class="c-projects__textfield">
-                  <p class="c-projects__text">
-                    Here you can see more detailed about all projects that I into. 
-                  </p>
-                </span>
-                <i class="c-projects__icon ri-github-fill"></i>
-              </div>
-              <div class="c-projects__card">
-                <span class="c-projects__textfield">
-                  <p class="c-projects__text">
-                  </p>
-                </span>
-                <i class="c-projects__icon ri-discord-fill"></i>
-              </div>
+        <article class="c-projects__container">
+          <h1 class="c-projects__title">Projects</h1>
+          <p>
+            There's some personal projects and some that a contribute with
+            periodically. come on, check them out!
+          </p>
+          <div class="c-projects__grid">
+            <div class="c-projects__card">
+              <span class="c-projects__textfield">
+                <p class="c-projects__text">
+                  That's my Youtube channel, here I do videos about technology.
+                </p>
+              </span>
+              <i class="c-projects__icon ri-youtube-fill"></i>
             </div>
-          </article>
-        </main>
+            <div class="c-projects__card">
+              <span class="c-projects__textfield">
+                <p class="c-projects__text">
+                  That's my Twitch channel that i do lives programming and
+                  chilling .-.
+                </p>
+              </span>
+              <i class="c-projects__icon ri-twitch-fill"></i>
+            </div>
+            <div class="c-projects__card">
+              <span class="c-projects__textfield">
+                <p class="c-projects__text">
+                  Here you can see more detailed about all projects that I into.
+                </p>
+              </span>
+              <i class="c-projects__icon ri-github-fill"></i>
+            </div>
+            <div class="c-projects__card">
+              <span class="c-projects__textfield">
+                <p class="c-projects__text">
+                  Here are my Discord server, That's for my followers but feel
+                  free to come!
+                </p>
+              </span>
+              <i class="c-projects__icon ri-discord-fill"></i>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
+    <footer></footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../assets/js/floatHeader.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="./assets/js/typedConfig.js"></script>
   </body>
-  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-  <script src="/assets/js/typedConfig.js"></script>
-  <script src="/assets/js/floatHeader.js"></script>
 </html>
