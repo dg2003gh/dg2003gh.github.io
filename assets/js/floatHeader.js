@@ -1,10 +1,16 @@
 function switchTheme() {
   const themeButton = document.querySelector(".js-header__theme-mode");
+  let theme;
 
-  themeButton.textContent == "dark_mode"
-    ? (themeButton.innerHTML = "light_mode")
-    : (themeButton.innerHTML = "dark_mode");
+  if (themeButton.textContent == "dark_mode") {
+    themeButton.innerHTML = "light_mode";
+    theme = "dark";
+  } else {
+    themeButton.innerHTML = "dark_mode";
+    theme = '"light';
+  }
   document.body.classList.toggle("dark-mode");
+  localStorage.setItem("theme", JSON.stringify(theme));
 }
 
 function hideHeader() {

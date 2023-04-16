@@ -1,6 +1,9 @@
 var typed = new Typed("#typedText", {
-  strings: ["A website", "fdhkjfds"],
-  typeSpeed: 150,
-  backSpeed: 150,
-  loop: true,
+  strings: [
+    "Hi!",
+    "I'm grad to have you here.",
+    'what about to click on the "let\'s" go button? ',
+  ],
+  typeSpeed: 200,
+  backSpeed: 200,
 });

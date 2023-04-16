@@ -45,12 +45,14 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/scrollbar.css" />
     <link rel="stylesheet" href="./assets/css/float-header.css" />
+    <link rel="stylesheet" href="./assets/css/grid-model.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/tip.css" />
     <link rel="stylesheet" href="./assets/css/skills.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <link rel="stylesheet" href="./assets/css/projects.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/animations.css" />
   </head>
   <body>
@@ -58,23 +60,47 @@
       <nav class="c-header__menu">
         <ul class="c-header__links">
           <li>
-            <a title="Go to home section" href="#home" tabindex="1">Home</a>
+            <a
+              title="Go to home section"
+              href="#home"
+              tabindex="1"
+              translation-key="home-header"
+              >Home</a
+            >
           </li>
           <li>
-            <a title="Go to about section" href="#about" tabindex="2">About</a>
+            <a
+              title="Go to about section"
+              href="#about"
+              tabindex="2"
+              translation-key="about-header"
+              >About</a
+            >
           </li>
           <li>
-            <a title="Go to skills section" href="#skills" tabindex="3"
+            <a
+              title="Go to skills section"
+              href="#skills"
+              tabindex="3"
+              translation-key="skills-header"
               >Skills</a
             >
           </li>
           <li>
-            <a title="Go to contact section" href="#contact" tabindex="4"
+            <a
+              title="Go to contact section"
+              href="#contact"
+              tabindex="4"
+              translation-key="contact-header"
               >Contact</a
             >
           </li>
           <li>
-            <a title="Go to projects section" href="#projects" tabindex="5"
+            <a
+              title="Go to projects section"
+              href="#projects"
+              tabindex="5"
+              translation-key="projects-header"
               >Projects</a
             >
           </li>
@@ -98,13 +124,28 @@
           </li>
           <li>
             <select
-              class="c-header__languages"
+              class="c-header__languages js-header__languages"
               title="Change website language"
               tabindex="8"
             >
-              <option value="en">🇺🇸</option>
-              <option value="pt_br">🇧🇷</option>
-              <option value="es">🇪🇸</option>
+              <option
+                value="en"
+                onclick=" loadTranslate('en',  'translation-key');"
+              >
+                🇺🇸
+              </option>
+              <option
+                value="pt_br"
+                onclick=" loadTranslate('pt_br', 'translation-key');"
+              >
+                🇧🇷
+              </option>
+              <option
+                value="es"
+                onclick=" loadTranslate('es', 'translation-key') "
+              >
+                🇪🇸
+              </option>
             </select>
           </li>
         </ul>
@@ -113,14 +154,32 @@
     <main>
       <section id="home" class="c-home">
         <aside class="c-home__aside">
-          <h1 class="c-home__title">
-            What can I do for you? <span id="typedText">a website</span>
-          </h1>
+          <span id="typedText">Let's start?</span>
         </aside>
+        <button>Let's go!</button> <button>I've been here before</button>
+      </section>
+      <section class="c-tip">
+        <div class="c-tip__card">
+          <span class="c-tip__bookmark">
+            <i class="ri-information-line c-tip__icon"></i>
+          </span>
+          <p class="c-tip__text" translation-key="tip">
+            <strong
+              >Tip: The website identify that you've been here before, if you
+              want to see the introduction again go to the website's
+              footer.</strong
+            >
+          </p>
+        </div>
+        <span class="c-tip__arrows"> </span>
+        <span class="c-tip__arrows"></span>
+        <span class="c-tip__arrows"></span>
       </section>
       <section id="about" class="c-about">
         <article class="c-about__text">
-          <h1 class="c-about__title">About me</h1>
+          <header>
+            <h1 class="c-about__title">About me</h1>
+          </header>
           <p>
             My name is Douglas Guimarães, I'm from Brazil and I'm 20 years old.
             It all started when I was 14 or 15 years old and my mother bought me
@@ -169,242 +228,274 @@
         </article>
       </section>
       <section class="c-tip">
-        <h1 class="c-tip__title">
-          Tip: You can Click on any card to go to their websites.
-        </h1>
+        <div class="c-tip__card">
+          <span class="c-tip__bookmark">
+            <i class="ri-information-line c-tip__icon"></i>
+          </span>
+          <p class="c-tip__text" translation-key="tip">
+            <strong
+              >Tip: You can Click on any card to go to their websites.</strong
+            >
+          </p>
+        </div>
         <span class="c-tip__arrows"> </span>
         <span class="c-tip__arrows"></span>
         <span class="c-tip__arrows"></span>
       </section>
       <section id="skills" class="c-skills">
         <article class="c-skills__container">
-          <h1 class="c-skills__title">Skills</h1>
-          <h2>Here you can see the technologies that I Work with</h2>
-          <div class="c-skills__grid">
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+          <header>
+            <h1 class="c-skills__title" translation-key="skills-section">
+              Skills
+            </h1>
+            <h2>Here you can see the technologies that I Work with</h2>
+          </header>
+          <div class="c-grid c-skills__grid">
+            <div class="c-grid__card c-skills__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   JavaScript is a versatile language used for web development
                   and beyond
                 </p>
               </span>
-              <i class="c-skills__icon devicon-javascript-plain"></i>
+              <i
+                class="c-grid__icon c-skills__icon devicon-javascript-plain"
+              ></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   HTML is a hypertext Markdown Language used to create websites.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-html5-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-html5-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   CSS is a stylesheet technology that allows us to style HTML
                   documents.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-css3-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-css3-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Python is a simply and intuitive language that is used in all
                   world.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-python-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-python-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Typescript is a variation of javascript. The main difference
                   is that is strongly typed language.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-typescript-plain"></i>
+              <i
+                class="c-grid__icon c-skills__icon devicon-typescript-plain"
+              ></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   PHP is a server side language which powers approximately 80%
                   of the websites.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-php-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-php-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   QT is a powerful C++ framework that allow us to create
                   cross-platform interfaces .
                 </p>
               </span>
-              <i class="c-skills__icon devicon-qt-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-qt-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Godot is a robust open-source game engine used to creating 3D
                   and 2D games.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-godot-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-godot-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Docker is a platform for software containerization and
                   deployment.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-docker-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-docker-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Blender is the most famous 3D open-source software of the
                   world.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-blender-original"></i>
+              <i
+                class="c-grid__icon c-skills__icon devicon-blender-original"
+              ></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Gimp is a free and open-source image editor.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-gimp-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-gimp-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Bash is the most used shell variant in the world.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-bash-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-bash-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Linux is big a open-source project with approximated 22.000
                   contributors.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-linux-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-linux-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Git is version control system for software development.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-git-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-git-plain"></i>
             </div>
-            <div class="c-skills__card">
-              <span class="c-skills__textfield">
-                <p class="c-skills__text">
+            <div class="c-grid__card c-skills__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Node.js is a javascript server-side runtime.
                 </p>
               </span>
-              <i class="c-skills__icon devicon-nodejs-plain"></i>
+              <i class="c-grid__icon c-skills__icon devicon-nodejs-plain"></i>
             </div>
           </div>
         </article>
       </section>
       <section id="contact" class="c-contact">
         <article class="c-contact__container">
-          <h1 class="c-contact__title">Contact me</h1>
+          <header><h1 class="c-contact__title">Contact me</h1></header>
           <p>Want to hired me? Well, there's some ways to contact...</p>
-          <div class="c-contact__grid">
-            <div class="c-contact__card">
-              <span class="c-contact__textfield">
-                <p class="c-contact__text">
+          <div class="c-grid">
+            <div class="c-grid__card c-contact__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   My Linkedin is the most formal way to getting in touch with me
                   and see my work.
                 </p>
               </span>
-              <i class="c-contact__icon ri-linkedin-box-fill"></i>
+              <i class="c-grid__icon c-contact__icon ri-linkedin-box-fill"></i>
             </div>
-            <div class="c-contact__card">
-              <span class="c-contact__textfield">
-                <p class="c-contact__text">
+            <div class="c-grid__card c-contact__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   This is my E-mail, it's another formal way to find me.
                 </p>
               </span>
-              <i class="c-contact__icon ri-mail-fill"></i>
+              <i class="c-grid__icon c-contact__icon ri-mail-fill"></i>
             </div>
-            <div class="c-contact__card">
-              <span class="c-contact__textfield">
-                <p class="c-contact__text">
+            <div class="c-grid__card c-contact__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   My Telegram is more informal, for a chill conversation.
                 </p>
               </span>
-              <i class="c-contact__icon ri-telegram-fill"></i>
+              <i class="c-grid__icon c-contact__icon ri-telegram-fill"></i>
             </div>
-            <div class="c-contact__card">
-              <span class="c-contact__textfield">
-                <p class="c-contact__text">
+            <div class="c-grid__card c-contact__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Here are my Discord server, That's for my followers but feel
                   free to come!
                 </p>
               </span>
-              <i class="c-contact__icon ri-discord-fill"></i>
+              <i class="c-grid__icon c-contact__icon ri-discord-fill"></i>
             </div>
           </div>
         </article>
       </section>
       <section id="projects" class="c-projects">
         <article class="c-projects__container">
-          <h1 class="c-projects__title">Projects</h1>
+          <header><h1 class="c-projects__title">Projects</h1></header>
           <p>
             There's some personal projects and some that a contribute with
             periodically. come on, check them out!
           </p>
-          <div class="c-projects__grid">
-            <div class="c-projects__card">
-              <span class="c-projects__textfield">
-                <p class="c-projects__text">
+          <div class="c-grid">
+            <div class="c-grid__card c-projects__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   That's my Youtube channel, here I do videos about technology.
                 </p>
               </span>
-              <i class="c-projects__icon ri-youtube-fill"></i>
+              <i class="c-grid__icon c-projects__icon ri-youtube-fill"></i>
             </div>
-            <div class="c-projects__card">
-              <span class="c-projects__textfield">
-                <p class="c-projects__text">
+            <div class="c-grid__card c-projects__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   That's my Twitch channel that i do lives programming and
                   chilling .-.
                 </p>
               </span>
-              <i class="c-projects__icon ri-twitch-fill"></i>
+              <i class="c-grid__icon c-projects__icon ri-twitch-fill"></i>
             </div>
-            <div class="c-projects__card">
-              <span class="c-projects__textfield">
-                <p class="c-projects__text">
+            <div class="c-grid__card c-projects__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Here you can see more detailed about all projects that I into.
                 </p>
               </span>
-              <i class="c-projects__icon ri-github-fill"></i>
+              <i class="c-grid__icon c-projects__icon ri-github-fill"></i>
             </div>
-            <div class="c-projects__card">
-              <span class="c-projects__textfield">
-                <p class="c-projects__text">
+            <div class="c-grid__card c-projects__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
                   Here are my Discord server, That's for my followers but feel
                   free to come!
                 </p>
               </span>
-              <i class="c-projects__icon ri-discord-fill"></i>
+              <i class="c-grid__icon c-projects__icon ri-discord-fill"></i>
             </div>
           </div>
         </article>
       </section>
     </main>
-    <footer></footer>
+    <footer class="c-footer">
+      <ul class="c-footer-links">
+        <a
+          class="devicon-github-original"
+          href="https://github.com/dg2003gh"
+        ></a>
+        <a
+          class="devicon-linkedin-plain"
+          href="https://www.linkedin.com/in/douglas-guimar%C3%A3es-691241263/"
+        ></a>
+      </ul>
+      <p id="copyright"></p>
+    </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../assets/js/floatHeader.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/localData.js"></script>
+    <script src="./assets/js/floatHeader.js"></script>
+    <script src="./assets/js/translator.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="./assets/js/typedConfig.js"></script>
   </body>

@@ -1,0 +1,59 @@
+.c-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  background-color: var(--clr-secondary);
+  width: 60vw;
+  margin-top: 50px;
+  border-radius: var(--border-radius);
+}
+
+.c-grid__card {
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-cards);
+  height: 120px;
+  margin: 15px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.c-grid__textfield {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  background-color: var(--clr-cards-before);
+  border-radius: var(--border-radius);
+  transition: width 800ms;
+}
+
+.c-grid__text {
+  position: absolute;
+  font-size: 0px;
+  width: 120px;
+  height: 100px;
+  margin: 12px;
+  transition: font-size 150ms;
+}
+
+.c-grid__card:hover .c-grid__textfield {
+  width: 100%;
+}
+
+.c-grid__card:hover .c-grid__text {
+  font-size: 15px;
+}
+
+.c-grid__icon {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: color 500ms;
+}
+
+.c-grid__card:hover .c-grid__icon {
+  animation: jumpy-animation 1000ms infinite linear;
+}

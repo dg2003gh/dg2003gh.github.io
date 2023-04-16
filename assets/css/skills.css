@@ -1,6 +1,5 @@
 .c-skills {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -11,65 +10,8 @@
 }
 
 .c-skills__grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  background-color: var(--clr-secondary);
-  width: 90vw;
-  height: 500px;
-  margin-top: 50px;
-  border-radius: var(--border-radius);
+  width: 80vw;
 }
-
-.c-skills__card {
-  display: flex;
-  background-color: var(--clr-cards);
-  margin: 15px;
-  align-items: center;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-
-.c-skills__textfield {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  height: 100%;
-  background-color: var(--clr-cards-before);
-  border-radius: var(--border-radius);
-  transition: width 800ms;
-}
-
-.c-skills__text {
-  position: absolute;
-  font-size: 0px;
-  width: 120px;
-  height: 100px;
-  margin: 12px;
-  transition: font-size 150ms;
-}
-
-.c-skills__card:hover .c-skills__textfield {
-  width: 100%;
-}
-
-.c-skills__card:hover .c-skills__text {
-  font-size: 15px;
-}
-
-.c-skills__icon {
-  font-size: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
-  transition: color 500ms;
-}
-
-.c-skills__card:hover .c-skills__icon {
-  animation: jumpy-animation 1000ms infinite linear;
-}
-
 .c-skills__card:nth-child(1):hover .c-skills__icon {
   color: #f7df1e;
 }

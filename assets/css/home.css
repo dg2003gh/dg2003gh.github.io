@@ -1,15 +1,14 @@
 .c-home__aside {
-  padding: 130px;
-  padding-left: 25px;
-  width: 55%;
-  height: 100vh;
-}
-
-.c-home__title {
-  font-size: 55px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  text-align: center;
 }
 
 #typedText,
 .typed-cursor {
+  font-size: 55px;
+  font-weight: bold;
   color: var(--clr-tertiary);
 }

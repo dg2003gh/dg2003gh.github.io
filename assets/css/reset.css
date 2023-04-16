@@ -39,6 +39,18 @@ body {
 section {
   background-color: var(--clr-primary);
   width: 100vw;
-  height: 750px;
+  min-height: 750px;
+  padding-bottom: 50px;
   transition: all 500ms;
+}
+
+button {
+  background-color: var(--clr-cards);
+  border: 2px solid var(--clr-tertiary);
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+button:hover {
+  background-color: #c4a953;
 }
