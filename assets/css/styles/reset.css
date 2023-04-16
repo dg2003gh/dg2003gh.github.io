@@ -11,7 +11,7 @@
   --border-radius: 15px;
 }
 
-.dark-mode {
+.cioccolato-theme {
   --clr-header: #00000015;
   --clr-hide-header: transparent;
   --clr-primary: #d27c54;
@@ -31,13 +31,13 @@
 
 html,
 body {
+  background-color: var(--clr-primary);
   scroll-behavior: smooth;
   width: 100vw;
   height: 100%;
 }
 
 section {
-  background-color: var(--clr-primary);
   width: 100vw;
   min-height: 750px;
   padding-bottom: 50px;
@@ -53,4 +53,12 @@ button {
 
 button:hover {
   background-color: #c4a953;
+}
+
+select {
+  background-color: transparent;
+  font-size: 18px;
+  border: transparent;
+  margin-top: 5px;
+  margin-left: 20px;
 }

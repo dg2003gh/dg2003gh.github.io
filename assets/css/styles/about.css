@@ -10,6 +10,7 @@
 }
 
 .c-about__text {
+  display: none;
   position: relative;
   background-color: var(--clr-secondary);
   text-align: center;

@@ -12,6 +12,7 @@
 .c-skills__grid {
   width: 80vw;
 }
+
 .c-skills__card:nth-child(1):hover .c-skills__icon {
   color: #f7df1e;
 }
