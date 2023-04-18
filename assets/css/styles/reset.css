@@ -1,38 +1,18 @@
-:root {
-  --clr-header: transparent;
-  --clr-hide-header: #00000042;
-  --clr-primary: #ffcba4;
-  --clr-secondary: #f0b990;
-  --clr-tertiary: #c4a953;
-  --clr-cards: #d1a380;
-  --clr-cards-before: #b99070;
-  --clr-box-shadow: #00000042;
-
-  --border-radius: 15px;
-}
-
-.cioccolato-theme {
-  --clr-header: #00000015;
-  --clr-hide-header: transparent;
-  --clr-primary: #d27c54;
-  --clr-secondary: #b26b4c;
-  --clr-cards: #8e523e;
-  --clr-cards-before: #7a4232;
-}
-
 * {
   font-family: Ubuntu, system-ui;
   font-display: swap;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--clr-text);
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--clr-primary);
-  scroll-behavior: smooth;
   width: 100vw;
   height: 100%;
 }
@@ -45,10 +25,10 @@ section {
 }
 
 button {
-  background-color: var(--clr-cards);
+  background-color: var(--clr-fourth);
   border: 2px solid var(--clr-tertiary);
   padding: 10px;
-  border-radius: var(--border-radius);
+  border-radius: var(--cfg-border-radius);
 }
 
 button:hover {

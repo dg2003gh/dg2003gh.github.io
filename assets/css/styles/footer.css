@@ -2,12 +2,13 @@
   display: block;
   margin: auto;
   margin-bottom: 5px;
-  background-color: var(--clr-cards);
+  background-color: var(--clr-secondary);
   text-align: center;
   width: 90vw;
   height: 100px;
   padding: 25px;
-  border-radius: var(--border-radius);
+  box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
 }
 
 .c-footer__links a {

@@ -5,18 +5,17 @@ class Translator {
   }
 
   translate() {
-    let _self = this;
     let xrhFile = new XMLHttpRequest();
     //load content data
     xrhFile.open("GET", "/assets/translations/" + this._lng + ".json", true);
-    xrhFile.onload = function (e) {
+    xrhFile.onload = (e) => {
       if (xrhFile.readyState === 4) {
         if (xrhFile.status === 200 || xrhFile.status == 0) {
           let LngObject = JSON.parse(xrhFile.responseText);
           const allDom = document.getElementsByTagName("*");
           for (let i = 0; i < allDom.length; i++) {
             let elem = allDom[i];
-            let key = elem.getAttribute(_self._tagAttr);
+            let key = elem.getAttribute(this._tagAttr);
             if (key != null) {
               elem.innerHTML = LngObject[key];
             }

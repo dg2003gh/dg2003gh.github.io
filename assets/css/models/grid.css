@@ -5,16 +5,18 @@
   background-color: var(--clr-secondary);
   width: 60vw;
   margin-top: 50px;
-  border-radius: var(--border-radius);
+  box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
 }
 
 .c-grid__card {
   display: flex;
   align-items: center;
-  background-color: var(--clr-cards);
-  height: 120px;
+  background-color: var(--clr-tertiary);
+  height: 150px;
   margin: 15px;
-  border-radius: var(--border-radius);
+  box-shadow: 5px 5px 5px 5px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
   cursor: pointer;
 }
 
@@ -25,18 +27,19 @@
   align-items: center;
   width: 10%;
   height: 100%;
-  background-color: var(--clr-cards-before);
-  border-radius: var(--border-radius);
+  background-color: var(--clr-fourth);
+  box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
   transition: width 800ms;
 }
 
 .c-grid__text {
-  position: absolute;
+  opacity: 0;
   font-size: 0px;
-  width: 120px;
-  height: 100px;
+  max-width: 150px;
+  min-height: 50px;
   margin: 12px;
-  transition: font-size 150ms;
+  transition: font-size 100ms, opacity 2000ms;
 }
 
 .c-grid__card:hover .c-grid__textfield {
@@ -44,6 +47,7 @@
 }
 
 .c-grid__card:hover .c-grid__text {
+  opacity: 1;
   font-size: 15px;
 }
 

@@ -1,8 +1,10 @@
 {
   "home-header": "ínicio",
+  "first-tip": "Dica: existem alguns temas que podem ser escolhidos no cabeçalho, incluindo um de alto contraste.",
   "about-header": "Sobre",
-  "skills-header": "skills",
-  "contact-header": "Contato",
-  "projects-header": "Projetos",
-  "projects-section": "Projetos"
+  "about-section-title": "Sobre mim",
+  "second-tip": "Dica: clicando em qualquer card você será redirecionado à seu site.",
+  "skills-word": "Skills",
+  "contact-word": "Contato",
+  "projects-word": "Projetos"
 }

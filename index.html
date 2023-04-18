@@ -40,6 +40,7 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <!---  Website media queries - typical device breakpoints from w3schools.com 2023  --->
+    <!--
     <link
       rel="stylesheet"
       href="./assets/css/media_queries/media-all.css"
@@ -80,19 +81,27 @@
       href="./assets/css/media_queries/min-1200px-screens.css"
       media="screen and (min-width: 1200px)"
     />
+    -->
+    <!---  Website Models --->
+    <link rel="stylesheet" href="./assets/css/models/header.css" />
+    <link rel="stylesheet" href="./assets/css/models/textboard.css" />
+    <link rel="stylesheet" href="./assets/css/models/grid.css" />
+    <link rel="stylesheet" href="./assets/css/models/tip.css" />
+    <link rel="stylesheet" href="./assets/css/models/animations.css" />
     <!--- Website Style--->
     <link rel="stylesheet" href="./assets/css/styles/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles/scrollbar.css" />
-    <link rel="stylesheet" href="./assets/css/styles/header.css" />
-    <link rel="stylesheet" href="./assets/css/styles/grid-model.css" />
     <link rel="stylesheet" href="./assets/css/styles/home.css" />
     <link rel="stylesheet" href="./assets/css/styles/about.css" />
-    <link rel="stylesheet" href="./assets/css/styles/tip.css" />
     <link rel="stylesheet" href="./assets/css/styles/skills.css" />
     <link rel="stylesheet" href="./assets/css/styles/contact.css" />
     <link rel="stylesheet" href="./assets/css/styles/projects.css" />
     <link rel="stylesheet" href="./assets/css/styles/footer.css" />
-    <link rel="stylesheet" href="./assets/css/styles/animations.css" />
+
+    <!--- Website Themes --->
+    <link rel="stylesheet" href="./assets/css/themes/cappuccino--root.css" />
+    <link rel="stylesheet" href="./assets/css/themes/cioccolato.css" />
+    <link rel="stylesheet" href="./assets/css/themes/high-contrast.css" />
   </head>
   <body>
     <header class="c-header js-header">
@@ -102,7 +111,7 @@
             <a
               title="Go to home section"
               href="#home"
-              tabindex="1"
+              tabindex="0"
               translation-key="home-header"
               >Home</a
             >
@@ -111,7 +120,7 @@
             <a
               title="Go to about section"
               href="#about"
-              tabindex="2"
+              tabindex="0"
               translation-key="about-header"
               >About</a
             >
@@ -120,8 +129,8 @@
             <a
               title="Go to skills section"
               href="#skills"
-              tabindex="3"
-              translation-key="skills-header"
+              tabindex="0"
+              translation-key="skills-word"
               >Skills</a
             >
           </li>
@@ -129,8 +138,8 @@
             <a
               title="Go to contact section"
               href="#contact"
-              tabindex="4"
-              translation-key="contact-header"
+              tabindex="0"
+              translation-key="contact-word"
               >Contact</a
             >
           </li>
@@ -138,8 +147,8 @@
             <a
               title="Go to projects section"
               href="#projects"
-              tabindex="5"
-              translation-key="projects-header"
+              tabindex="0"
+              translation-key="projects-word"
               >Projects</a
             >
           </li>
@@ -148,14 +157,14 @@
               class="ri-arrow-drop-up-line c-header__expand-mode js-header__expand-mode"
               title="Hide header"
               onclick="hideHeader()"
-              tabindex="6"
+              tabindex="0"
             ></a>
           </li>
           <li>
             <select
               class="ri-moon-line c-header__theme-mode js-header__theme-mode"
               title="Toggle theme "
-              tabindex="7"
+              tabindex="0"
             >
               <option onclick="switchTheme('Cappuccino')">
                 ☕ Cappuccino theme
@@ -163,33 +172,22 @@
               <option onclick="switchTheme('Cioccolato')">
                 🍫 Cioccolato theme
               </option>
-              <option value="">high contrast theme</option>
+              <option onclick="switchTheme('High-contrast')">
+                👁️ high-contrast theme
+              </option>
             </select>
           </li>
           <li>
             <select
               class="c-header__languages js-header__languages"
               title="Change website language"
-              tabindex="8"
+              tabindex="0"
             >
-              <option
-                value="en"
-                onclick=" loadTranslate('en',  'translation-key');"
-              >
-                🇺🇸
-              </option>
-              <option
-                value="pt_br"
-                onclick=" loadTranslate('pt_br', 'translation-key');"
-              >
+              <option value="en" onclick=" setTranslation('el');">🇺🇸</option>
+              <option value="pt_br" onclick=" setTranslation('pt_br');">
                 🇧🇷
               </option>
-              <option
-                value="es"
-                onclick=" loadTranslate('es', 'translation-key') "
-              >
-                🇪🇸
-              </option>
+              <option value="es" onclick=" setTranslation('es') ">🇪🇸</option>
             </select>
           </li>
         </ul>
@@ -200,19 +198,15 @@
         <aside class="c-home__aside">
           <span id="typedText">Let's start?</span>
         </aside>
-        <button>Let's go!</button> <button>I've been here before</button>
       </section>
       <section class="c-tip">
         <div class="c-tip__card">
           <span class="c-tip__bookmark">
             <i class="ri-information-line c-tip__icon"></i>
           </span>
-          <p class="c-tip__text" translation-key="tip">
-            <strong
-              >Tip: The website identify that you've been here before, if you
-              want to see the introduction again go to the website's
-              footer.</strong
-            >
+          <p class="c-tip__text" translation-key="first-tip">
+            Tip: there are some themes that you can choose on header, including
+            a high-contrast one.
           </p>
         </div>
         <span class="c-tip__arrows"> </span>
@@ -220,19 +214,25 @@
         <span class="c-tip__arrows"></span>
       </section>
       <section id="about" class="c-about">
-        <article class="c-about__text">
+        <article class="c-textboard__text">
           <header>
-            <h1 class="c-about__title">About me</h1>
+            <h1
+              translation-key="about-section-title"
+              class="c-textboard__title"
+            >
+              About me
+            </h1>
           </header>
           <p>
-            My name is Douglas Guimarães, I'm from Brazil and I'm 20 years old.
-            It all started when I was 14 or 15 years old and my mother bought me
-            an older laptop that came with an old version of a Linux
-            distribution called BigLinux. Initially, I tried to install Windows
-            on it, but this laptop didn't even have a hard drive, so I ended up
-            booting BigLinux from a USB stick. While trying to remove it from
-            the USB stick and install it on my old laptop, I discovered (a
-            Brazilian YouTuber) and others who helped me understand Linux.
+            My name is <span lang="pt_br">Douglas Guimarães</span> , I'm from
+            Brazil and I'm 20 years old. It all started when I was 14 or 15
+            years old and my mother bought me an older laptop that came with an
+            old version of a Linux distribution called BigLinux. Initially, I
+            tried to install Windows on it, but this laptop didn't even have a
+            hard drive, so I ended up booting BigLinux from a USB stick. While
+            trying to remove it from the USB stick and install it on my old
+            laptop, I discovered (a Brazilian YouTuber) and others who helped me
+            understand Linux.
           </p>
           <p>
             After my laptop broke, I didn't hear about Linux for a long time. I
@@ -256,10 +256,10 @@
             Currently, I aspire to be a full-stack developer. I'm a volunteer
             for the BigLinux distribution (yes, the first distribution I used
             knowing that it was Linux), and I'm studying information technology
-            while working as a freelancer. You can contact me in the "Contact
-            Me" section and see my skills in the "Skills" section.
+            while working as a freelancer. You can contact me in the "Contact"
+            section and see my skills in the "Skills" section.
           </p>
-          <div class="c-about__bookmark"></div>
+          <div class="c-textboard__bookmark"></div>
         </article>
         <article>
           <img
@@ -276,10 +276,8 @@
           <span class="c-tip__bookmark">
             <i class="ri-information-line c-tip__icon"></i>
           </span>
-          <p class="c-tip__text" translation-key="tip">
-            <strong
-              >Tip: You can Click on any card to go to their websites.</strong
-            >
+          <p class="c-tip__text" translation-key="second-tip">
+            Tip: you can Click on any card to go to their websites.
           </p>
         </div>
         <span class="c-tip__arrows"> </span>
@@ -289,7 +287,7 @@
       <section id="skills" class="c-skills">
         <article class="c-skills__container">
           <header>
-            <h1 class="c-skills__title" translation-key="skills-section">
+            <h1 class="c-skills__title" translation-key="skills-word">
               Skills
             </h1>
             <h2>Here you can see the technologies that I Work with</h2>
@@ -436,7 +434,11 @@
       </section>
       <section id="contact" class="c-contact">
         <article class="c-contact__container">
-          <header><h1 class="c-contact__title">Contact me</h1></header>
+          <header>
+            <h1 translation-key="contact-word" class="c-contact__title">
+              Contact
+            </h1>
+          </header>
           <p>Want to hired me? Well, there's some ways to contact...</p>
           <div class="c-grid">
             <div class="c-grid__card c-contact__card">
@@ -478,7 +480,11 @@
       </section>
       <section id="projects" class="c-projects">
         <article class="c-projects__container">
-          <header><h1 class="c-projects__title">Projects</h1></header>
+          <header>
+            <h1 translation-key="projects-word" class="c-projects__title">
+              Projects
+            </h1>
+          </header>
           <p>
             There's some personal projects and some that a contribute with
             periodically. come on, check them out!
@@ -526,20 +532,25 @@
       <ul class="c-footer-links">
         <a
           class="devicon-github-original"
+          aria-label="Go to Douglas github page."
+          title="Go to Douglas  github page."
           href="https://github.com/dg2003gh"
+          tabindex="0"
         ></a>
         <a
           class="devicon-linkedin-plain"
+          aria-label="Go to Douglas linkedin page."
+          title="Go to Douglas  linkedin page."
           href="https://www.linkedin.com/in/douglas-guimar%C3%A3es-691241263/"
+          tabindex="0"
         ></a>
       </ul>
       <p id="copyright"></p>
-      <button>Reset introduction</button>
     </footer>
-    <script src="./assets/js/scripts/header.js"></script>
-    <script src="./assets/js/scripts/switchTheme.js"></script>
     <script src="./assets/js/classes/translator.js"></script>
-    <script src="./assets/js/scripts/loadTranslation.js"></script>
+    <script src="./assets/js/scripts/header.js"></script>
+    <script src="./assets/js/scripts/themeLoader.js"></script>
+    <script src="./assets/js/scripts/translationLoader.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="./assets/js/scripts/typedConfig.js"></script>
     <script src="./assets/js/scripts/getDataForFooter.js"></script>

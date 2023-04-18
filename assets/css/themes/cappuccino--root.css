@@ -1,0 +1,38 @@
+:root {
+  --clr-text: #fff;
+  --clr-gold: #a89e08;
+  --clr-info: #f3f73a;
+  --clr-header: transparent;
+  --clr-hide-header: #00000085;
+  --clr-primary: #ffcba4;
+  --clr-secondary: #f0b990;
+  --clr-tertiary: #d1a380;
+  --clr-fourth: #b99070;
+  --clr-box-shadow: #00000042;
+
+  /* Skills*/
+  --clr-icon-js: #f7df1e;
+  --clr-icon-html: #e96228;
+  --clr-icon-css: #0096dc;
+  --clr-icon-py: #ffd140;
+  --clr-icon-ts: #3077c5;
+  --clr-icon-php: #7377ad;
+  --clr-icon-qt: #42944c;
+  --clr-icon-gd: #4588b9;
+  --clr-icon-docker: #277c92;
+  --clr-icon-blender: #e1790d;
+  --clr-icon-gimp: #6c6240;
+  --clr-icon-bash: #272e35;
+  --clr-icon-linux: #413434;
+  --clr-icon-git: #e84d31;
+  --clr-icon-nodejs: #59792a;
+  /* Contact*/
+  --clr-icon-in: #006fb0;
+  --clr-icon-email: green;
+  --clr-icon-telegram: #0a4c72;
+  /* Projects*/
+  --clr-icon-yt: red;
+  --clr-icon-twitch: purple;
+
+  --cfg-border-radius: 15px;
+}

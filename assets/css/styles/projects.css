@@ -10,9 +10,9 @@
 }
 
 .c-projects__card:nth-child(1):hover .c-projects__icon {
-  color: red;
+  color: var(--clr-icon-yt);
 }
 
 .c-projects__card:nth-child(2):hover .c-projects__icon {
-  color: purple;
+  color: var(--clr-icon-twitch);
 }

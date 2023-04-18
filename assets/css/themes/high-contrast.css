@@ -1,0 +1,10 @@
+.high-contrast-theme {
+  --clr-gold: #a89e08;
+  --clr-info: #000000;
+  --clr-header: #333333;
+  --clr-hide-header: #4b0082;
+  --clr-primary: #000000;
+  --clr-secondary: #ff00ea;
+  --clr-tertiary: #118ca1;
+  --clr-fourth: #17679c;
+}

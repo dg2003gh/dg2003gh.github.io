@@ -14,61 +14,61 @@
 }
 
 .c-skills__card:nth-child(1):hover .c-skills__icon {
-  color: #f7df1e;
+  color: var(--clr-icon-js);
 }
 
 .c-skills__card:nth-child(2):hover .c-skills__icon {
-  color: #e96228;
+  color: var(--clr-icon-html);
 }
 
 .c-skills__card:nth-child(3):hover .c-skills__icon {
-  color: #0096dc;
+  color: var(--clr-icon-css);
 }
 
 .c-skills__card:nth-child(4):hover .c-skills__icon {
-  color: #ffd140;
+  color: var(--clr-icon-py);
 }
 
 .c-skills__card:nth-child(5):hover .c-skills__icon {
-  color: #3077c5;
+  color: var(--clr-icon-ts);
 }
 
 .c-skills__card:nth-child(6):hover .c-skills__icon {
-  color: #7377ad;
+  color: var(--clr-icon-php);
 }
 
 .c-skills__card:nth-child(7):hover .c-skills__icon {
-  color: #42944c;
+  color: var(--clr-icon-qt);
 }
 
 .c-skills__card:nth-child(8):hover .c-skills__icon {
-  color: #4588b9;
+  color: var(--clr-icon-gd);
 }
 
 .c-skills__card:nth-child(9):hover .c-skills__icon {
-  color: #277c92;
+  color: var(--clr-icon-docker);
 }
 
 .c-skills__card:nth-child(10):hover .c-skills__icon {
-  color: #e1790d;
+  color: var(--clr-icon-blender);
 }
 
 .c-skills__card:nth-child(11):hover .c-skills__icon {
-  color: #6c6240;
+  color: var(--clr-icon-gimp);
 }
 
 .c-skills__card:nth-child(12):hover .c-skills__icon {
-  color: #272e35;
+  color: var(--clr-icon-bash);
 }
 
 .c-skills__card:nth-child(13):hover .c-skills__icon {
-  color: #413434;
+  color: var(--clr-icon-linux);
 }
 
 .c-skills__card:nth-child(14):hover .c-skills__icon {
-  color: #e84d31;
+  color: var(--clr-icon-git);
 }
 
 .c-skills__card:nth-child(15):hover .c-skills__icon {
-  color: #59792a;
+  color: var(--clr-icon-nodejs);
 }

@@ -4,32 +4,6 @@
   justify-content: space-around;
 }
 
-.c-about__title {
-  font-size: 60px;
-  margin-bottom: 25px;
-}
-
-.c-about__text {
-  display: none;
-  position: relative;
-  background-color: var(--clr-secondary);
-  text-align: center;
-  width: 50%;
-  height: 700px;
-  padding: 50px;
-  border-radius: var(--border-radius);
-}
-
-.c-about__bookmark {
-  position: absolute;
-  background-color: var(--clr-cards);
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 100%;
-  border-radius: var(--border-radius);
-}
-
 .c-about__photo {
   padding: 50px;
   animation: floating-animation 5000ms infinite linear;

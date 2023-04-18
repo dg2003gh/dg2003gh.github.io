@@ -10,13 +10,13 @@
 }
 
 .c-contact__card:nth-child(1):hover .c-contact__icon {
-  color: #006fb0;
+  color: var(--clr-icon-in);
 }
 
 .c-contact__card:nth-child(2):hover .c-contact__icon {
-  color: green;
+  color: var(--clr-icon-email);
 }
 
 .c-contact__card:nth-child(3):hover .c-contact__icon {
-  color: #0a4c72;
+  color: var(--clr-icon-telegram);
 }
