@@ -11,7 +11,7 @@
   border-radius: var(--cfg-border-radius);
 }
 
-.c-footer__links a {
+.c-footer__links {
   font-size: 30px;
   text-decoration: none;
   margin-left: 10px;

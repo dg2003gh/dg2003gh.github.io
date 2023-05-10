@@ -97,7 +97,6 @@
     <link rel="stylesheet" href="./assets/css/styles/contact.css" />
     <link rel="stylesheet" href="./assets/css/styles/projects.css" />
     <link rel="stylesheet" href="./assets/css/styles/footer.css" />
-
     <!--- Website Themes --->
     <link rel="stylesheet" href="./assets/css/themes/cappuccino--root.css" />
     <link rel="stylesheet" href="./assets/css/themes/cioccolato.css" />
@@ -162,18 +161,18 @@
           </li>
           <li>
             <select
-              class="ri-moon-line c-header__theme-mode js-header__theme-mode"
+              class="c-header__theme-select"
               title="Toggle theme "
               tabindex="0"
             >
               <option onclick="switchTheme('Cappuccino')">
-                ☕ Cappuccino theme
+                &#xEC06; Cappuccino theme
               </option>
               <option onclick="switchTheme('Cioccolato')">
-                🍫 Cioccolato theme
+                &#xEB1B; muffin al Cioccolato theme
               </option>
               <option onclick="switchTheme('High-contrast')">
-                👁️ high-contrast theme
+                &#xECB1; high-contrast theme
               </option>
             </select>
           </li>
@@ -183,7 +182,7 @@
               title="Change website language"
               tabindex="0"
             >
-              <option value="en" onclick=" setTranslation('el');">🇺🇸</option>
+              <option value="en" onclick=" setTranslation('en');">🇺🇸</option>
               <option value="pt_br" onclick=" setTranslation('pt_br');">
                 🇧🇷
               </option>
@@ -333,8 +332,8 @@
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
                 <p class="c-grid__text">
-                  Typescript is a variation of javascript. The main difference
-                  is that is strongly typed language.
+                  Typescript is a superset of javascript. The main difference is
+                  that is strongly typed language.
                 </p>
               </span>
               <i
@@ -529,16 +528,16 @@
       </section>
     </main>
     <footer class="c-footer">
-      <ul class="c-footer-links">
+      <ul>
         <a
-          class="devicon-github-original"
+          class="devicon-github-original c-footer-links"
           aria-label="Go to Douglas github page."
           title="Go to Douglas  github page."
           href="https://github.com/dg2003gh"
           tabindex="0"
         ></a>
         <a
-          class="devicon-linkedin-plain"
+          class="devicon-linkedin-plain c-footer-links"
           aria-label="Go to Douglas linkedin page."
           title="Go to Douglas  linkedin page."
           href="https://www.linkedin.com/in/douglas-guimar%C3%A3es-691241263/"

@@ -45,7 +45,7 @@
 .c-header__expand-mode {
   font-size: 25px;
   margin-left: 20px;
-  transition: all 500ms;
+  transition: 500ms;
 }
 
 .c-header__expand-mode:hover::after {
@@ -57,11 +57,13 @@
   animation: jumpy-animation 2000ms infinite;
 }
 
-.c-header__theme-mode {
+.c-header__theme-select,
+.c-header__theme-select option {
+  font-family: remixicon, Ubuntu, system-ui, -apple-system;
   width: 40px;
 }
 
-.c-header__theme-mode:hover {
+.c-header__theme-select:hover {
   cursor: pointer;
   animation: jumpy-animation 2000ms infinite;
 }
