@@ -15,7 +15,7 @@ class Translator {
           const allDom = document.getElementsByTagName("*");
           for (let i = 0; i < allDom.length; i++) {
             let elem = allDom[i];
-            const key = elem.getAttribute(this._tagAttr);
+            const key = elem.getAttribute(this.tagAttr);
             if (key != null) {
               elem.innerHTML = LngObject[key];
             }

@@ -7,12 +7,8 @@ function setTranslation(lng) {
 
 function loadTranslation() {
   const getLanguage = JSON.parse(localStorage.getItem("Language"));
-  try {
-    setTranslation(getLanguage, "translation-key");
-    console.log(`${getLanguage} translation  Loaded!`);
-  } catch {
-    console.log(`Error to load ${getLanguage} translation! `);
-  }
+  setTranslation(getLanguage, "translation-key");
+  console.log(`${getLanguage} translation  Loaded!`);
 }
 
 loadTranslation();
