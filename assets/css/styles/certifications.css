@@ -1,0 +1,22 @@
+.c-certifications {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-certifications__title {
+  font-size: 50px;
+}
+
+.c-certifications__card:nth-child(1):hover .c-certifications__icon {
+  color: var(--clr-icon-in);
+}
+
+.c-certifications__card:nth-child(2):hover .c-certifications__icon {
+  color: var(--clr-icon-email);
+}
+
+.c-certifications__card:nth-child(3):hover .c-certifications__icon {
+  color: var(--clr-icon-telegram);
+}

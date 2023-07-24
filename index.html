@@ -86,6 +86,7 @@
     <link rel="stylesheet" href="./assets/css/models/textboard.css" />
     <link rel="stylesheet" href="./assets/css/models/grid.css" />
     <link rel="stylesheet" href="./assets/css/models/tip.css" />
+    <link rel="stylesheet" href="./assets/css/models/modal.css" />
     <link rel="stylesheet" href="./assets/css/models/animations.css" />
     <!--- Website Style--->
     <link rel="stylesheet" href="./assets/css/styles/reset.css" />
@@ -93,9 +94,11 @@
     <link rel="stylesheet" href="./assets/css/styles/home.css" />
     <link rel="stylesheet" href="./assets/css/styles/about.css" />
     <link rel="stylesheet" href="./assets/css/styles/skills.css" />
+    <link rel="stylesheet" href="./assets/css/styles/certifications.css" />
     <link rel="stylesheet" href="./assets/css/styles/contact.css" />
     <link rel="stylesheet" href="./assets/css/styles/projects.css" />
     <link rel="stylesheet" href="./assets/css/styles/footer.css" />
+
     <!--- Website Themes --->
     <link rel="stylesheet" href="./assets/css/themes/cappuccino--root.css" />
     <link rel="stylesheet" href="./assets/css/themes/cioccolato.css" />
@@ -130,6 +133,15 @@
               tabindex="0"
               translation-key="skills-word"
               >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              title="Go to certifications section"
+              href="#certifications"
+              tabindex="0"
+              translation-key="certifications-word"
+              >Certifications</a
             >
           </li>
           <li>
@@ -274,9 +286,9 @@
           <span class="c-tip__bookmark">
             <i class="ri-information-line c-tip__icon"></i>
           </span>
-          <p class="c-tip__text" translation-key="second-tip">
+          <h4 class="c-tip__text" translation-key="second-tip">
             Tip: you can Click on any card to go to their websites.
-          </p>
+          </h4>
         </div>
         <span class="c-tip__arrows"> </span>
         <span class="c-tip__arrows"></span>
@@ -288,14 +300,16 @@
             <h1 class="c-skills__title" translation-key="skills-word">
               Skills
             </h1>
-            <h2>Here you can see the technologies that I Work with</h2>
+            <h4 translation-key="skills-word-subtitle">
+              see the technologies that I work with!
+            </h4>
           </header>
           <div class="c-grid c-skills__grid">
             <div class="c-grid__card c-skills__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="javascript-text">
                   JavaScript is a versatile language used for web development
-                  and beyond
+                  and beyond!
                 </p>
               </span>
               <i
@@ -304,7 +318,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="html-text">
                   HTML is a hypertext Markdown Language used to create websites.
                 </p>
               </span>
@@ -312,7 +326,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="css-text">
                   CSS is a stylesheet technology that allows us to style HTML
                   documents.
                 </p>
@@ -321,7 +335,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="python-text">
                   Python is a simply and intuitive language that is used in all
                   world.
                 </p>
@@ -330,9 +344,9 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="typescript-text">
                   Typescript is a superset of javascript. The main difference is
-                  that is strongly typed language.
+                  that is strongly typed.
                 </p>
               </span>
               <i
@@ -341,7 +355,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="php-text">
                   PHP is a server side language which powers approximately 80%
                   of the websites.
                 </p>
@@ -350,7 +364,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="qt-text">
                   QT is a powerful C++ framework that allow us to create
                   cross-platform interfaces .
                 </p>
@@ -359,7 +373,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="godot-text">
                   Godot is a robust open-source game engine used to creating 3D
                   and 2D games.
                 </p>
@@ -368,7 +382,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="docker-text">
                   Docker is a platform for software containerization and
                   deployment.
                 </p>
@@ -377,7 +391,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="blender-text">
                   Blender is the most famous 3D open-source software of the
                   world.
                 </p>
@@ -388,7 +402,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="gimp-text">
                   Gimp is a free and open-source image editor.
                 </p>
               </span>
@@ -396,7 +410,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="bash-text">
                   Bash is the most used shell variant in the world.
                 </p>
               </span>
@@ -413,7 +427,7 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="git-text">
                   Git is version control system for software development.
                 </p>
               </span>
@@ -421,11 +435,68 @@
             </div>
             <div class="c-grid__card c-skills__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="node-text">
                   Node.js is a javascript server-side runtime.
                 </p>
               </span>
               <i class="c-grid__icon c-skills__icon devicon-nodejs-plain"></i>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="certifications" class="c-certifications">
+        <article class="c-certtifications__container">
+          <header>
+            <h1
+              translation-key="certifications-word"
+              class="c-certifications__title"
+            >
+              Certifications
+            </h1>
+          </header>
+          <h4 translation-key="certifications-subtitle">
+            Here you can see all my certifications
+          </h4>
+          <div class="c-grid">
+            <div class="c-grid__card c-certifications__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
+                  My Linkedin is the most formal way to getting in touch with me
+                  and see my work.
+                </p>
+              </span>
+              <i
+                class="c-grid__icon c-certifications__icon ri-linkedin-box-fill"
+              ></i>
+            </div>
+            <div class="c-grid__card c-certifications__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
+                  This is my E-mail, it's another formal way to find me.
+                </p>
+              </span>
+              <i class="c-grid__icon c-certifications__icon ri-mail-fill"></i>
+            </div>
+            <div class="c-grid__card c-certifications__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
+                  My Telegram is more informal, for a chill conversation.
+                </p>
+              </span>
+              <i
+                class="c-grid__icon c-certifications__icon ri-telegram-fill"
+              ></i>
+            </div>
+            <div class="c-grid__card c-certifications__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
+                  Here are my Discord server, That's for my followers but feel
+                  free to come!
+                </p>
+              </span>
+              <i
+                class="c-grid__icon c-certifications__icon ri-discord-fill"
+              ></i>
             </div>
           </div>
         </article>
@@ -437,11 +508,13 @@
               Contact
             </h1>
           </header>
-          <p>Want to hired me? Well, there's some ways to contact...</p>
+          <h4 translation-key="contact-subtitle">
+            Want to hired me? Well, there's some ways to contact...
+          </h4>
           <div class="c-grid">
             <div class="c-grid__card c-contact__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="linkedin-text">
                   My Linkedin is the most formal way to getting in touch with me
                   and see my work.
                 </p>
@@ -450,7 +523,7 @@
             </div>
             <div class="c-grid__card c-contact__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="email-text">
                   This is my E-mail, it's another formal way to find me.
                 </p>
               </span>
@@ -458,7 +531,7 @@
             </div>
             <div class="c-grid__card c-contact__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="telegram-text">
                   My Telegram is more informal, for a chill conversation.
                 </p>
               </span>
@@ -466,7 +539,7 @@
             </div>
             <div class="c-grid__card c-contact__card">
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
+                <p class="c-grid__text" translation-key="discord-text">
                   Here are my Discord server, That's for my followers but feel
                   free to come!
                 </p>
@@ -483,18 +556,32 @@
               Projects
             </h1>
           </header>
-          <p>
-            There's some personal projects and some that a contribute with
-            periodically. come on, check them out!
-          </p>
+          <h4 translation-key="projects-subtitle">
+            Here you can see the last 4 projects that I've committed on my
+            GitHub. come on, check them out!
+          </h4>
           <div class="c-grid">
-            <div class="c-grid__card c-projects__card">
+            <div
+              class="c-grid__card c-projects__card"
+              data-modal-target="#js-first-project"
+            >
               <span class="c-grid__textfield">
-                <p class="c-grid__text">
-                  That's my Youtube channel, here I do videos about technology.
+                <p id="js-first-project-description" class="c-grid__text">
+                  First project short description
                 </p>
               </span>
-              <i class="c-grid__icon c-projects__icon ri-youtube-fill"></i>
+              <img
+                id="js-first-project__img"
+                src=""
+                alt="First Project miniature"
+                width="80%"
+                height="90%"
+                class="c-grid__img"
+              />
+              <form id="js-first-project" class="c-modal">
+                <h1></h1>
+                <p></p>
+              </form>
             </div>
             <div class="c-grid__card c-projects__card">
               <span class="c-grid__textfield">
@@ -503,7 +590,13 @@
                   chilling .-.
                 </p>
               </span>
-              <i class="c-grid__icon c-projects__icon ri-twitch-fill"></i>
+              <img
+                src="./assets/imgs/projects_imgs/site_genios.png"
+                alt="quiz gênios website "
+                width="80%"
+                height="90%"
+                class="c-grid__img"
+              />
             </div>
             <div class="c-grid__card c-projects__card">
               <span class="c-grid__textfield">
@@ -511,7 +604,13 @@
                   Here you can see more detailed about all projects that I into.
                 </p>
               </span>
-              <i class="c-grid__icon c-projects__icon ri-github-fill"></i>
+              <img
+                src="./assets/imgs/projects_imgs/site_genios.png"
+                alt="quiz gênios website "
+                width="80%"
+                height="90%"
+                class="c-grid__img"
+              />
             </div>
             <div class="c-grid__card c-projects__card">
               <span class="c-grid__textfield">
@@ -520,11 +619,18 @@
                   free to come!
                 </p>
               </span>
-              <i class="c-grid__icon c-projects__icon ri-discord-fill"></i>
+              <img
+                src="./assets/imgs/projects_imgs/site_genios.png"
+                alt="quiz gênios website "
+                width="80%"
+                height="90%"
+                class="c-grid__img"
+              />
             </div>
           </div>
         </article>
       </section>
+      <div id="overlay"></div>
     </main>
     <footer class="c-footer">
       <ul>
@@ -545,11 +651,14 @@
       </ul>
       <p id="copyright"></p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="./assets/js/scripts/githubLastRepos.js"></script>
     <script src="./assets/js/classes/translator.js"></script>
     <script src="./assets/js/scripts/header.js"></script>
     <script src="./assets/js/scripts/themeLoader.js"></script>
     <script src="./assets/js/scripts/translationLoader.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="./assets/js/scripts/modal.js"></script>
     <script src="./assets/js/scripts/typedConfig.js"></script>
     <script src="./assets/js/scripts/getDataForFooter.js"></script>
   </body>

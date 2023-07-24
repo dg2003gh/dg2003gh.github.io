@@ -51,6 +51,12 @@
   font-size: 15px;
 }
 
+.c-grid__img {
+  z-index: 1;
+  margin-left: 20px;
+  border-radius: var(--cfg-border-radius);
+}
+
 .c-grid__icon {
   font-size: 50px;
   margin-right: 10px;
