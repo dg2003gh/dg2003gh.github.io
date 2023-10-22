@@ -1,9 +1,6 @@
-var typed = new Typed("#typedText", {
-  strings: [
-    "Hi!",
-    "I'm grad to have you here.",
-    'what about to click on the "let\'s" go button? ',
-  ],
+const typed = new Typed("#c-typedWord", {
+  strings: ["A game.", "An mobile app.", "An website. ", "an 3D model."],
+  loop: true,
   typeSpeed: 200,
   backSpeed: 200,
 });
