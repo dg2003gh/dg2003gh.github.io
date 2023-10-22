@@ -26,8 +26,11 @@
   --clr-icon-linux: #413434;
   --clr-icon-git: #e84d31;
   --clr-icon-nodejs: #59792a;
+  --clr-icon-mysql: #00618a;
+  --clr-icon-nextjs: #000;
+
   /* Contact*/
-  --clr-icon-in: #006fb0;
+  --clr-icon-linkedin: #006fb0;
   --clr-icon-email: green;
   --clr-icon-telegram: #0a4c72;
   /* Projects*/
