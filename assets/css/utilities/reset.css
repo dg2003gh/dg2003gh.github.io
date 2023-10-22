@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  font-family: Ubuntu, system-ui, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--clr-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-primary);
+  width: 100vw;
+  height: 100%;
+}
+
+section {
+  width: 100vw;
+  min-height: 750px;
+  padding-bottom: 50px;
+  transition: all 500ms;
+}
+
+button {
+  background-color: var(--clr-fourth);
+  border: 2px solid var(--clr-tertiary);
+  padding: 10px;
+  border-radius: var(--cfg-border-radius);
+}
+
+button:hover {
+  background-color: #c4a953;
+}
+
+select {
+  background-color: transparent;
+  font-size: clamp(1.2rem, 1rem, 3rem);
+  border: transparent;
+  margin-top: 5px;
+  margin-left: 20px;
+}
