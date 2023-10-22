@@ -1,0 +1,21 @@
+.c-textBoard {
+  position: relative;
+  background-color: var(--clr-secondary);
+  text-align: center;
+  font-size: clamp(0.5rem, 1rem, 1.5rem);
+  min-width: 50vw;
+  padding: 50px;
+  box-shadow: 5px 5px 5px 5px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
+}
+
+.c-textBoard__bookmark {
+  position: absolute;
+  background-color: var(--clr-tertiary);
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
+}
