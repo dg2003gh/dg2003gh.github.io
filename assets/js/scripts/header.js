@@ -1,5 +1,5 @@
-function hideHeader() {
-  const expandButton = document.querySelector(".js-header__expand-mode");
+const expandButton = document.querySelector(".js-header__expand-mode");
+expandButton.onclick = () => {
   const header = document.querySelector(".js-header");
   let getTopValue = window
     .getComputedStyle(header, null)
@@ -19,4 +19,4 @@ function hideHeader() {
     expandButton.style = "";
     expandButton.title = "hide header";
   }
-}
+};
