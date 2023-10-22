@@ -1,14 +1,34 @@
+import Translator from "../classes/Translator.js";
+
+const languageDropDown = document.querySelectorAll(
+  "#c-header__languages option"
+);
+
 function setTranslation(lng) {
-  let translator = new Translator(lng, "translation-key");
+  if (lng == null) return;
+
+  const translator = new Translator(lng, "translate-key");
   translator.translate();
-  console.log(`Website language changed to ${lng} `);
   localStorage.setItem("Language", JSON.stringify(lng));
 }
 
 function loadTranslation() {
   const getLanguage = JSON.parse(localStorage.getItem("Language"));
-  setTranslation(getLanguage, "translation-key");
-  console.log(`${getLanguage} translation  Loaded!`);
+  setTranslation(getLanguage);
 }
+
+languageDropDown.forEach((language, index) => {
+  const selectedIndex = JSON.parse(localStorage.getItem("isThisSelected"));
+
+  index === selectedIndex
+    ? (language.selected = true)
+    : (language.selected = false);
+
+  language.onclick = () => {
+    localStorage.setItem("isThisSelected", JSON.stringify(index));
+
+    setTranslation(language.value);
+  };
+});
 
 loadTranslation();
