@@ -1,0 +1,19 @@
+.c-footer {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  background-color: var(--clr-secondary);
+  text-align: center;
+  width: 90vw;
+  height: 100px;
+  padding: 25px;
+  box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
+}
+
+.c-footer__links {
+  font-size: clamp(0.5rem, 1.5rem, 2rem);
+  margin-bottom: 5px;
+  list-style: none;
+  cursor: pointer;
+}
