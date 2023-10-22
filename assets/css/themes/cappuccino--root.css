@@ -33,8 +33,11 @@
   --clr-icon-linkedin: #006fb0;
   --clr-icon-email: green;
   --clr-icon-telegram: #0a4c72;
-  /* Projects*/
-  --clr-icon-yt: red;
+
+  /* socials */
+  --clr-icon-tiktok: #ffffff;
+  --clr-icon-instagram: #fff;
+  --clr-icon-youtube: red;
   --clr-icon-twitch: purple;
 
   --cfg-border-radius: 5px;
