@@ -1,0 +1,19 @@
+.u-shape {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  background-color: var(--clr-tertiary);
+  box-shadow: 5px 5px var(--clr-box-shadow);
+
+  animation: floating-animation alternate infinite 3500ms;
+}
+
+.u-circle {
+  border-radius: 50%;
+}
+
+.u-line {
+  width: 0.5vw;
+  height: 20vw;
+  rotate: 45deg;
+}
