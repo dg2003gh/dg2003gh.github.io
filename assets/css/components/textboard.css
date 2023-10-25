@@ -1,12 +1,56 @@
 .c-textBoard {
   position: relative;
   background-color: var(--clr-secondary);
-  text-align: center;
+  text-align: justify;
   font-size: clamp(0.5rem, 1rem, 1.5rem);
-  min-width: 50vw;
+  width: 60vw;
+  height: 100vh;
   padding: 50px;
   box-shadow: 5px 5px 5px 5px var(--clr-box-shadow);
   border-radius: var(--cfg-border-radius);
+}
+
+#c-textBoard__switches {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: var(--clr-tertiary);
+  margin-bottom: 50px;
+  border-radius: var(--cfg-border-radius);
+  box-shadow: 5px 5px var(--clr-box-shadow);
+}
+
+#c-textBoard__switches::before {
+  content: "";
+  position: absolute;
+  right: var(--js-right, auto);
+  left: var(--js-left, 0);
+  background-color: var(--clr-tertiary-hovered);
+  width: 50%;
+  height: 100%;
+  transition: all 500ms ease-in-out;
+}
+
+.c-textBoard__switch {
+  z-index: 2;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  cursor: pointer;
+  background-color: transparent;
+  padding: 15px;
+  border: transparent;
+  transition: background-color 500ms;
+}
+
+.c-textBoard__text-container {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.c-textBoard__text {
+  min-width: 100%;
+  transition: all 500ms ease-in-out;
 }
 
 .c-textBoard__bookmark {
