@@ -1,10 +1,8 @@
-const themeButton = document.querySelectorAll(
-  "#c-header__theme-dropDown option"
-);
+const themeOptions = document.querySelectorAll("#c-theme-dropdown ul li");
 
-themeButton.forEach((option) => {
+themeOptions.forEach((option) => {
   option.onclick = () => {
-    switch (option.value) {
+    switch (option.dataset.theme) {
       case "Cappuccino":
         document.body.classList.remove("cioccolato-theme");
         document.body.classList.remove("high-contrast-theme");
@@ -18,8 +16,8 @@ themeButton.forEach((option) => {
         document.body.classList.remove("cioccolato-theme");
         break;
     }
-
-    localStorage.setItem("theme", JSON.stringify(option.value));
+    console.log(option.dataset.theme);
+    localStorage.setItem("theme", JSON.stringify(option.dataset.theme));
   };
 });
 
