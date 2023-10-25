@@ -16,7 +16,6 @@ themeOptions.forEach((option) => {
         document.body.classList.remove("cioccolato-theme");
         break;
     }
-    console.log(option.dataset.theme);
     localStorage.setItem("theme", JSON.stringify(option.dataset.theme));
   };
 });
