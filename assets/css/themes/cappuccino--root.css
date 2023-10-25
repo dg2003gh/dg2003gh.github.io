@@ -7,7 +7,10 @@
   --clr-primary: #ffcba4;
   --clr-secondary: #f0b990;
   --clr-tertiary: #d1a380;
+  --clr-tertiary-hovered: #e8bc9a;
   --clr-fourth: #b99070;
+  --clr-dropdown-menu: #9b7151;
+  --clr-dropdown-option-hovered: #cc956c;
   --clr-box-shadow: #00000042;
 
   /* Skills*/
@@ -26,7 +29,7 @@
   --clr-icon-linux: #413434;
   --clr-icon-git: #e84d31;
   --clr-icon-nodejs: #59792a;
-  --clr-icon-mysql: #00618a;
+  --clr-icon-sql: #00618a;
   --clr-icon-nextjs: #000;
 
   /* Contact*/
@@ -41,4 +44,5 @@
   --clr-icon-twitch: purple;
 
   --cfg-border-radius: 5px;
+  --cfg-blur: 20px;
 }
