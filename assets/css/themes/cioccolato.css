@@ -5,5 +5,36 @@
   --clr-primary: #d27c54;
   --clr-secondary: #b26b4c;
   --clr-tertiary: #8e523e;
+  --clr-tertiary-hovered: #d3856a;
   --clr-fourth: #7a4232;
+
+  /* Skills*/
+  --clr-icon-js: #f7df1e;
+  --clr-icon-html: #ff773d;
+  --clr-icon-css: #259cd3;
+  --clr-icon-py: #ffd140;
+  --clr-icon-ts: #608fc2;
+  --clr-icon-php: #9295bb;
+  --clr-icon-qt: #74e481;
+  --clr-icon-gd: #66abdd;
+  --clr-icon-docker: #4accec;
+  --clr-icon-blender: #e1790d;
+  --clr-icon-gimp: #6c6240;
+  --clr-icon-bash: #c9cbce;
+  --clr-icon-linux: #eedcdc;
+  --clr-icon-git: #ec7560;
+  --clr-icon-nodejs: #8bb54d;
+  --clr-icon-sql: #4297bb;
+  --clr-icon-nextjs: #ffffff;
+
+  /* Contact*/
+  --clr-icon-linkedin: #62b4e3;
+  --clr-icon-email: #a7e060;
+  --clr-icon-telegram: #57b0e3;
+
+  /* socials */
+  --clr-icon-tiktok: #ffffff;
+  --clr-icon-instagram: #fff;
+  --clr-icon-youtube: #f85959;
+  --clr-icon-twitch: #d747ce;
 }
