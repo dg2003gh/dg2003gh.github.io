@@ -1,0 +1,37 @@
+dropdown {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.c-dropdown__menu {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 100%;
+  left: 50%;
+  width: max-content;
+  border-radius: var(--cfg-border-radius);
+  background-color: var(--clr-dropdown-menu);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform: scale(0);
+  transition: transform 100ms ease-in-out;
+}
+
+.c-dropdown__menu li {
+  list-style: none;
+  text-wrap: nowrap;
+  color: var(--crl-text);
+  cursor: pointer;
+  padding: 5px;
+  transition: background-color 500ms;
+}
+
+.c-dropdown__menu li:hover {
+  width: 100%;
+  background-color: var(--clr-dropdown-option-hovered);
+}
