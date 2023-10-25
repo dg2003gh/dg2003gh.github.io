@@ -1,8 +1,6 @@
 import Translator from "../classes/Translator.js";
 
-const languageDropDown = document.querySelectorAll(
-  "#c-header__languages option"
-);
+const languageOptions = document.querySelectorAll("#c-header__languages ul li");
 
 function setTranslation(lng) {
   if (lng == null) return;
@@ -17,18 +15,17 @@ function loadTranslation() {
   setTranslation(getLanguage);
 }
 
-languageDropDown.forEach((language, index) => {
+languageOptions.forEach((language, index) => {
   const selectedIndex = JSON.parse(localStorage.getItem("isThisSelected"));
 
-  index === selectedIndex
+  /*   index === selectedIndex
     ? (language.selected = true)
-    : (language.selected = false);
+    : (language.selected = false); */
 
-  language.onclick = () => {
+  language.addEventListener("click", () => {
     localStorage.setItem("isThisSelected", JSON.stringify(index));
-
-    setTranslation(language.value);
-  };
+    setTranslation(language.dataset.lng);
+  });
 });
 
 loadTranslation();
