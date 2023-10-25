@@ -17,5 +17,10 @@
 }
 
 .u-main-title {
+  margin-top: 4rem !important;
   text-align: center;
+}
+
+#c-threejs__container {
+  width: 100vw;
 }
