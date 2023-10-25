@@ -49,6 +49,10 @@
 }
 
 .u-mobile__displayIt {
+  display: none !important;
+}
+
+.u-display-none {
   display: none;
 }
 
@@ -63,4 +67,9 @@
 
 .u-half-width {
   width: 50vw;
+}
+
+.u-reverse-row-container {
+  display: flex;
+  flex-direction: row-reverse;
 }
