@@ -7,7 +7,7 @@
   background: var(--clr-header);
   padding: 15px;
   width: fit-content;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(var(--cfg-blur));
   box-shadow: 0px 2px 4px var(--clr-box-shadow);
   border-radius: var(--cfg-border-radius);
   transition-property: background, top, padding;
@@ -53,17 +53,6 @@
 }
 
 .c-header__expand-mode:hover {
-  cursor: pointer;
-  animation: jumpy-animation 2000ms infinite;
-}
-
-.c-header__select,
-.c-header__select option {
-  font-family: Ubuntu, system-ui, -apple-system;
-  width: 40px;
-}
-
-.c-header__select:hover {
   cursor: pointer;
   animation: jumpy-animation 2000ms infinite;
 }
