@@ -39,41 +39,53 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
-    <!---  Website media queries - typical device breakpoints from w3schools.com 2023  --->
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
       rel="stylesheet"
-      media="only screen and (max-width: 768px)"
-      href="./assets/css/components/mediaQueries/components/grid.css"
-    />
-    <link
-      rel="stylesheet"
-      media="only screen and (max-width: 768px)"
-      href="./assets/css/components/mediaQueries/components/header.css"
-    />
-    <link
-      rel="stylesheet"
-      media="only screen and (max-width: 768px)"
-      href="./assets/css/utilities/mediaQueries/utilities/utilities.css"
     />
     <!---  Website components --->
     <link rel="stylesheet" href="./assets/css/components/header.css" />
     <link rel="stylesheet" href="./assets/css/components/textboard.css" />
     <link rel="stylesheet" href="./assets/css/components/grid.css" />
     <link rel="stylesheet" href="./assets/css/components/tip.css" />
+    <link rel="stylesheet" href="./assets/css/components/dropdown.css" />
     <link rel="stylesheet" href="./assets/css/components/background.css" />
     <link rel="stylesheet" href="./assets/css/components/footer.css" />
     <!--UTILITIES-->
     <link rel="stylesheet" href="./assets/css/utilities/animations.css" />
     <link rel="stylesheet" href="./assets/css/utilities/utilities.css" />
     <link rel="stylesheet" href="./assets/css/utilities/reset.css" />
-    <link rel="stylesheet" href="./assets/css/utilities/icons-color.css" />
+
     <link rel="stylesheet" href="./assets/css/utilities/scrollbar.css" />
     <!--- Website Themes --->
     <link rel="stylesheet" href="./assets/css/themes/cappuccino--root.css" />
     <link rel="stylesheet" href="./assets/css/themes/cioccolato.css" />
     <link rel="stylesheet" href="./assets/css/themes/high-contrast.css" />
+    <link rel="stylesheet" href="./assets/css/themes/icons-color.css" />
+
+    <!---  Website media queries - typical device breakpoints from w3schools.com 2023  --->
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 600px)"
+      href="./assets/css/components/mediaQueries/components/grid.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 1000px)"
+      href="./assets/css/components/mediaQueries/components/header.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 800px)"
+      href="./assets/css/utilities/mediaQueries/utilities/utilities.css"
+    />
+
     <!--- Js Files--->
-    <script type="importmap">
+    <!--     <script type="importmap">
       {
         "imports": {
           "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
@@ -81,27 +93,38 @@
         }
       }
     </script>
-    <script defer type="module" src="./assets/js/scripts/threeD.js"></script>
     <script
       defer
       type="module"
-      src="./assets/js/classes/Translator.js"
+      src="./assets/js/classes/ModelsRender.js"
     ></script>
+    <script
+      defer
+      type="module"
+      src="./assets/js/scripts/modelConfig.js"
+    ></script> -->
     <script defer type="module" src="./assets/js/scripts/header.js"></script>
     <script
       defer
       type="module"
-      src="./assets/js/scripts/themeLoader.js"
+      src="./assets/js/scripts/background.js"
+    ></script>
+    <script defer type="module" src="./assets/js/scripts/dropdown.js"></script>
+    <script
+      defer
+      type="module"
+      src="./assets/js/classes/Translator.js"
     ></script>
     <script
       defer
       type="module"
       src="./assets/js/scripts/translationLoader.js"
     ></script>
+    <script defer type="module" src="./assets/js/scripts/textboard.js"></script>
     <script
       defer
       type="module"
-      src="./assets/js/scripts/background.js"
+      src="./assets/js/scripts/themeLoader.js"
     ></script>
     <script
       defer
@@ -121,8 +144,11 @@
     ></script>
   </head>
   <body>
+    <noscript>
+      Sorry, This website don't will work properly with script support.
+    </noscript>
     <header class="c-header js-header">
-      <nav class="c-header__menu">
+      <nav id="c-header__menu">
         <ul class="c-header__links">
           <li>
             <a
@@ -166,48 +192,149 @@
           </li>
           <li>
             <a
-              title="Go to social section"
-              href="#social"
+              title="Go to project section"
+              href="#project"
               tabindex="0"
-              translate-key="social-word"
+              translate-key="projects-word"
             >
-              Social
+              Projects
             </a>
           </li>
           <li>
-            <a
+            <i
               class="ri-arrow-drop-up-line c-header__expand-mode js-header__expand-mode"
               title="Hide header"
               tabindex="0"
-            ></a>
+            ></i>
           </li>
-
           <li>
-            <select
-              id="c-header__theme-dropDown"
-              class="c-header__select"
+            <dropdown
+              id="c-theme-dropdown"
+              class="c-dropdown"
               title="Toggle theme "
               tabindex="0"
             >
-              <option value="Cappuccino">☕ Cappuccino theme</option>
-              <option value="Cioccolato">🥮 muffin al Cioccolato theme</option>
-              <option value="High-contrast">👁️‍🗨️ high-contrast theme</option>
-            </select>
+              <ul class="c-dropdown__menu">
+                <li data-theme="Cappuccino">Cappuccino theme</li>
+                <li data-theme="Cioccolato">muffin al Cioccolato theme</li>
+                <li data-theme="High-contrast">high-contrast theme</li>
+              </ul>
+            </dropdown>
           </li>
           <li>
-            <select
+            <dropdown
               id="c-header__languages"
-              class="c-header__languages js-header__languages c-header__select"
+              class="js-header__languages"
               title="Change website language"
               tabindex="0"
             >
-              <option value="en">🇺🇸 English</option>
-              <option value="pt_br">🇧🇷 Portuguese</option>
-              <option value="es">🇪🇸 Spanish</option>
-            </select>
+              <ul class="c-dropdown__menu">
+                <li data-lng="en">🇺🇸 English</li>
+                <li data-lng="es">🇪🇸 Espanõl</li>
+                <li data-lng="pt-BR">🇧🇷 Português</li>
+              </ul>
+            </dropdown>
           </li>
         </ul>
       </nav>
+      <span class="u-reverse-row-container u-space-between u-mobile__displayIt">
+        <button
+          id="c-header__mobile-button"
+          class="ri-menu-line c-header__mobile-button"
+        ></button>
+        <div id="c-header__mobile-menu">
+          <nav>
+            <ul class="c-header__links">
+              <li>
+                <a
+                  title="Go to home section"
+                  href="#home"
+                  tabindex="0"
+                  translate-key="home-header"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  title="Go to about section"
+                  href="#about"
+                  tabindex="0"
+                  translate-key="about-header"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  title="Go to skills section"
+                  href="#skills"
+                  tabindex="0"
+                  translate-key="skills-word"
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  title="Go to contact section"
+                  href="#contact"
+                  tabindex="0"
+                  translate-key="contact-word"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  title="Go to project section"
+                  href="#project"
+                  tabindex="0"
+                  translate-key="projects-word"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <i
+                  class="ri-arrow-drop-up-line c-header__expand-mode js-header__expand-mode"
+                  title="Hide header"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <dropdown
+                  id="c-theme-dropdown"
+                  class="c-dropdown"
+                  title="Toggle theme "
+                  tabindex="0"
+                >
+                  <ul class="c-dropdown__menu">
+                    <li data-theme="Cappuccino">Cappuccino theme</li>
+                    <li data-theme="Cioccolato">muffin al Cioccolato theme</li>
+                    <li data-theme="High-contrast">high-contrast theme</li>
+                  </ul>
+                </dropdown>
+              </li>
+              <li>
+                <dropdown
+                  id="c-header__languages"
+                  class="js-header__languages"
+                  title="Change website language"
+                  tabindex="0"
+                >
+                  <ul class="c-dropdown__menu">
+                    <li data-lng="en">🇺🇸 English</li>
+                    <li data-lng="es">🇪🇸 Espanõl</li>
+                    <li data-lng="pt-BR">🇧🇷 Português</li>
+                  </ul>
+                </dropdown>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1>Douglas Guimarães</h1>
+      </span>
     </header>
     <main>
       <span id="c-background-container">
@@ -221,7 +348,7 @@
         class="u-align-v u-space-between u-mobile__center u-mobile__container"
       >
         <aside class="u-main-title u-margin">
-          <p>What can I do for you?</p>
+          <p translate-key="home-phrase">What can I do for you?</p>
           <strong id="c-typedWord" class="u-highlight-color">A Website.</strong>
         </aside>
         <span id="c-threejs__container"></span>
@@ -245,47 +372,75 @@
         class="u-row-container u-space-between u-mobile__center"
       >
         <article class="c-textBoard u-center u-margin u-column-container">
-          <header>
+          <header class="u-column-container u-center">
             <h1 translate-key="about-section-title" class="u-title u-margin">
               About me
             </h1>
+            <span id="c-textBoard__switches">
+              <button class="c-textBoard__switch">short version</button>
+              <button class="c-textBoard__switch">long version</button>
+            </span>
           </header>
-          <p>
-            My name is <span lang="pt-br">Douglas Guimarães</span> , I'm from
-            Brazil and I'm 20 years old. It all started when I was 14 or 15
-            years old and my mother bought me an older laptop that came with an
-            old version of a Linux distribution called BigLinux. Initially, I
-            tried to install Windows on it, but this laptop didn't even have a
-            hard drive, so I ended up booting BigLinux from a USB stick. While
-            trying to remove it from the USB stick and install it on my old
-            laptop, I discovered (a Brazilian YouTuber) and others who helped me
-            understand Linux.
-          </p>
-          <p>
-            After my laptop broke, I didn't hear about Linux for a long time. I
-            had other computers, but they all had Windows, and I only used them
-            for basic tasks. In 2019, I received a new laptop from my father,
-            and I was so happy about it... until the hard drive burned out.
-            Instead of telling my father and calling for maintenance, I decided
-            to open it up and try to fix it myself. Did I fix it? Of course not!
-            I admit that I can be a bit clueless sometimes. The only way to keep
-            using it was to install Linux, so I installed Linux Mint.
-          </p>
-          <p>
-            This experience made Linux so much more interesting to me. I wanted
-            to enter the beautiful world of technology from a developer's point
-            of view - to learn how to make things instead of just using them. I
-            learned Python, JavaScript, Node.js, Bash, and more. Of course, you
-            don't have to be a developer to use Linux, but using Linux and
-            wanting to learn more about it made me who I am today.
-          </p>
-          <p>
-            Currently, I aspire to be a full-stack developer. I'm a volunteer
-            for the BigLinux distribution (yes, the first distribution I used
-            knowing that it was Linux), and I'm studying information technology
-            while working as a freelancer. You can contact me in the "Contact"
-            section and see my skills in the "Skills" section.
-          </p>
+          <article class="c-textBoard__text-container">
+            <div class="c-textBoard__text">
+              <p>oiweqewqeyhkujqwtrjhwqerghiuweru</p>
+            </div>
+            <div class="c-textBoard__text">
+              <p>
+                My name is <span lang="pt-BR">Douglas Guimarães</span>, I am 20
+                years old, a FullStack programmer, and I am pursuing a degree in
+                Information Systems. I'm going to tell you a short story that
+                encapsulates my LOVE for programming.
+              </p>
+              <p>
+                I've always been a boy who wanted to pursue this area? The
+                answer is no. When I was little, I wanted to be a firefighter.
+                Curious, right? A completely different profession from what I am
+                today and deeply passionate about. This happened around 2018 or
+                even earlier. My mother bought me a beaten-up laptop at a thrift
+                store. No battery, just a USB drive. That USB drive would change
+                my life because it contained a Linux distribution called
+                BigLinux. At that time, I didn't even know there was a whole
+                open-source and free world outside of Windows. For me, it was
+                just that, but it wasn't. There was so much more, a whole new
+                world to be explored: ideas, completely mesmerizing concepts,
+                and... it all ended when I tried to use a different power source
+                for the laptop and it got fried. But okay... I guess. Because
+                the story doesn't end here, as years later, my father bought me
+                a brand new laptop straight from the store. I was ecstatic,
+                while my dad was... as parents are when they buy something that
+                costs an arm and a leg.
+              </p>
+              <p>
+                Anyway, it was there. A beautiful, brand new laptop. A quarter
+                of it went to the Windows license, until... The hard drive
+                burned out, and like the idiot that I am, I decided to open it,
+                thus voiding its warranty. However, let's not jump to
+                conclusions, because I couldn't fix it...
+              </p>
+              <p>
+                My father will certainly not be happy with this information that
+                I just made public. Sorry, Dad. The important thing is, do you
+                remember that USB drive with a Linux distro? I still have it to
+                this day, and at that time, it was very necessary. I used the
+                laptop with various live distros for about two years until I
+                could buy a hard drive with my mom. And after I got to know
+                Linux, I never left it. Okay, I confess, maybe in my second year
+                of high school because I wanted to play Roblox with my friend.
+                But after a week, I returned, and I never left again. And so,
+                after getting to know Linux and engaging with its community, and
+                having to use it and learn to live with 3.5GB of storage as a
+                temporary hard drive, I decided that this was my path from then
+                on.
+              </p>
+              <p>
+                And today, here I am, aspiring to be a respected Fullstack
+                developer, knowing how a boy who wanted to be a firefighter is
+                now a passionate developer thanks to one technology and two
+                people who are my life.
+              </p>
+            </div>
+          </article>
           <div class="c-textBoard__bookmark"></div>
         </article>
         <article class="u-margin u-mobile__display-none">
@@ -302,13 +457,9 @@
           <span class="c-tip__bookmark">
             <i class="ri-information-line c-tip__icon"></i>
           </span>
-          <h4 class="c-tip__text" translate-key="second-tip">
-            Tip: you can Click on any card to go to their websites<i
-              class="u-mobile__displayIt"
-            >
-              or hold them to see more information </i
-            >.
-          </h4>
+          <p class="c-tip__text" translate-key="second-tip">
+            Tip: you can click on any card to go to their websites
+          </p>
         </div>
         <span class="c-tip__arrows"> </span>
         <span class="c-tip__arrows"></span>
@@ -562,46 +713,43 @@
           </a>
         </div>
       </section>
-      <section id="social" class="u-column-container u-center">
+      <section id="project" class="u-column-container u-center">
         <header class="u-center-text">
-          <h1 translate-key="social-word" class="u-title">Social medias 💗</h1>
-          <h4 translate-key="social-subtitle" class="u-subtitle">
-            Do you want to get in touch with me? well, there are a few ways:
+          <h1 translate-key="projects-word" class="u-title">projects</h1>
+          <h4 translate-key="projects-subtitle" class="u-subtitle">
+            Here you can see my project medias, where create content about
+            development.
           </h4>
         </header>
         <div class="c-grid u-half-width u-margin">
           <a
             href="https://www.linkedin.com/in/douglas-guimar%C3%A3es-691241263/"
             target="_blank"
-            class="c-grid__card c-social__card"
+            class="c-grid__card"
           >
             <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="linkedin-text">
-                My Linkedin is the most formal way to getting in touch with me
-                and see my work.
+              <p class="c-grid__text" translate-key="tiktok-text">
+                My tiktok is a way I can interact with different people and talk
+                about development... with a very dubious humor.
               </p>
             </span>
-            <i class="c-grid__icon u-linkedin-color ri-tiktok-line"></i>
+            <i class="c-grid__icon u-tiktok-color ri-tiktok-line"></i>
           </a>
-          <a
-            href="mailto:dg2003gh@gmail.com"
-            target="_blank"
-            class="c-grid__card c-social__card"
-          >
+          <a href="" target="_blank" class="c-grid__card c-project__card">
             <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="email-text">
-                This is my E-mail, it's another formal way to find me.
+              <p class="c-grid__text" translate-key="tiktok-text">
+                Here where I do lives... sometimes.
               </p>
             </span>
-            <i class="c-grid__icon u-email-color ri-twitch-fill"></i>
+            <i class="c-grid__icon u-twitch-color ri-twitch-fill"></i>
           </a>
-          <a href="" target="_blank" class="c-grid__card c-social__card">
+          <a href="" target="_blank" class="c-grid__card c-project__card">
             <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="telegram-text">
-                My Telegram is more informal, for a chill conversation.
+              <p class="c-grid__text" translate-key="youtube-text">
+                My youtube... For a little more complex video, that can'
               </p>
             </span>
-            <i class="c-grid__icon u-telegram-color ri-youtube-fill"></i>
+            <i class="c-grid__icon u-youtube-color ri-youtube-fill"></i>
           </a>
           <a
             href="https://discord.gg/XhuTC5rKGH"
@@ -609,12 +757,11 @@
             class="c-grid__card c-contact__card"
           >
             <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="discord-text">
-                Here are my Discord server, That's for my followers but feel
-                free to come!
+              <p class="c-grid__text" translate-key="instagram-text">
+                Funny content about me and programming...
               </p>
             </span>
-            <i class="c-grid__icon ri-instagram-fill"></i>
+            <i class="c-grid__icon u-instagram-color ri-instagram-fill"></i>
           </a>
         </div>
       </section>
