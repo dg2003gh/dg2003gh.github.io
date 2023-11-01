@@ -9,8 +9,7 @@
   --clr-tertiary: #d1a380;
   --clr-tertiary-hovered: #e8bc9a;
   --clr-fourth: #b99070;
-  --clr-dropdown-menu: #9b7151;
-  --clr-dropdown-option-hovered: #cc956c;
+  --clr-dropdown-option: #9b7151;
   --clr-box-shadow: #00000042;
 
   /* Skills*/
@@ -36,12 +35,6 @@
   --clr-icon-linkedin: #006fb0;
   --clr-icon-email: green;
   --clr-icon-telegram: #0a4c72;
-
-  /* socials */
-  --clr-icon-tiktok: #ffffff;
-  --clr-icon-instagram: #fff;
-  --clr-icon-youtube: red;
-  --clr-icon-twitch: purple;
 
   --cfg-border-radius: 5px;
   --cfg-blur: 20px;
