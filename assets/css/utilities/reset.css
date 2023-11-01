@@ -15,5 +15,14 @@ body {
 }
 
 section {
-  min-height: 750px;
+  min-height: 700px;
+}
+
+select {
+  background-color: var(--clr-dropdown-option);
+  border: transparent;
+  padding: 5px;
+  max-width: 4.5rem;
+  font-size: clamp(0.5rem, 1rem, 3rem);
+  border-radius: var(--cfg-border-radius);
 }
