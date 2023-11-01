@@ -1,5 +1,5 @@
 .u-mobile__display-none {
-  display: none;
+  display: none !important;
 }
 
 .u-mobile__container {
@@ -23,4 +23,8 @@
 
 #c-threejs__container {
   width: 100vw;
+}
+
+.u-no-list-style {
+  list-style: none;
 }
