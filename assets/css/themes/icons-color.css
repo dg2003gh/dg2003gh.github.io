@@ -70,20 +70,6 @@
   color: var(--clr-icon-telegram);
 }
 
-/*  Socials */
-
-.u-tiktok-color {
-  color: var(--clr-icon-tiktok);
-}
-
-.u-twitch-color {
-  color: var(--clr-icon-twitch);
-}
-
-.u-youtube-color {
-  color: var(--clr-icon-youtube);
-}
-
-.u-instagram-color {
-  color: var(--clr-icon-instagram);
+.u-discord-color {
+  color: var(--clr-icon-discord);
 }
