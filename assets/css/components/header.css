@@ -10,8 +10,12 @@
   backdrop-filter: blur(var(--cfg-blur));
   box-shadow: 0px 2px 4px var(--clr-box-shadow);
   border-radius: var(--cfg-border-radius);
-  transition-property: background, top, padding;
+  transition-property: background, width, top, padding;
   transition-duration: 700ms;
+}
+
+#c-header__menu {
+  translate: 0;
 }
 
 .c-header__links {
@@ -45,7 +49,7 @@
 .c-header__expand-mode {
   font-size: 25px;
   margin-left: 20px;
-  transition: 500ms;
+  transition: opacity 500ms;
 }
 
 .c-header__expand-mode:hover::after {
@@ -55,4 +59,8 @@
 .c-header__expand-mode:hover {
   cursor: pointer;
   animation: jumpy-animation 2000ms infinite;
+}
+
+.c-header__select {
+  max-width: 3rem;
 }
