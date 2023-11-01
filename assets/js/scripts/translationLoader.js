@@ -1,30 +1,29 @@
 import Translator from "../classes/Translator.js";
 
-const languageOptions = document.querySelectorAll("#c-header__languages ul li");
+const languageDropdowns = document.querySelectorAll(".js-header__languages");
 
 function setTranslation(lng) {
-  if (lng == null) return;
-
-  const translator = new Translator(lng, "translate-key");
+  const translator = new Translator(lng, "translate-key", true, "#c-typedWord");
   translator.translate();
   localStorage.setItem("Language", JSON.stringify(lng));
 }
 
 function loadTranslation() {
-  const getLanguage = JSON.parse(localStorage.getItem("Language"));
-  setTranslation(getLanguage);
+  const getLng = JSON.parse(localStorage.getItem("Language"));
+  const options = document.querySelectorAll(".js-header__languages option");
+
+  options.forEach((option) => {
+    option.value == getLng
+      ? (option.selected = true)
+      : (option.selected = false);
+  });
+
+  setTranslation(getLng);
 }
 
-languageOptions.forEach((language, index) => {
-  const selectedIndex = JSON.parse(localStorage.getItem("isThisSelected"));
-
-  /*   index === selectedIndex
-    ? (language.selected = true)
-    : (language.selected = false); */
-
-  language.addEventListener("click", () => {
-    localStorage.setItem("isThisSelected", JSON.stringify(index));
-    setTranslation(language.dataset.lng);
+languageDropdowns.forEach((languageDropdown) => {
+  languageDropdown.addEventListener("click", () => {
+    setTranslation(languageDropdown.value);
   });
 });
 
