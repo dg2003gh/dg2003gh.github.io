@@ -52,7 +52,6 @@
     <link rel="stylesheet" href="./assets/css/components/textboard.css" />
     <link rel="stylesheet" href="./assets/css/components/grid.css" />
     <link rel="stylesheet" href="./assets/css/components/tip.css" />
-    <link rel="stylesheet" href="./assets/css/components/dropdown.css" />
     <link rel="stylesheet" href="./assets/css/components/background.css" />
     <link rel="stylesheet" href="./assets/css/components/footer.css" />
     <!--UTILITIES-->
@@ -75,17 +74,22 @@
     />
     <link
       rel="stylesheet"
-      media="only screen and (max-width: 1000px)"
+      media="only screen and (max-width: 700px)"
       href="./assets/css/components/mediaQueries/components/header.css"
     />
     <link
       rel="stylesheet"
-      media="only screen and (max-width: 800px)"
+      media="only screen and (max-width: 1000px)"
+      href="./assets/css/components/mediaQueries/components/textboard.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 700px)"
       href="./assets/css/utilities/mediaQueries/utilities/utilities.css"
     />
 
     <!--- Js Files--->
-    <!--     <script type="importmap">
+    <script type="importmap">
       {
         "imports": {
           "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
@@ -102,19 +106,25 @@
       defer
       type="module"
       src="./assets/js/scripts/modelConfig.js"
-    ></script> -->
+    ></script>
     <script defer type="module" src="./assets/js/scripts/header.js"></script>
     <script
       defer
       type="module"
       src="./assets/js/scripts/background.js"
     ></script>
-    <script defer type="module" src="./assets/js/scripts/dropdown.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+      integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       defer
       type="module"
       src="./assets/js/classes/Translator.js"
     ></script>
+
     <script
       defer
       type="module"
@@ -130,17 +140,6 @@
       defer
       type="module"
       src="./assets/js/scripts/getDataForFooter.js"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
-      integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      defer
-      type="module"
-      src="./assets/js/scripts/typedConfig.js"
     ></script>
   </head>
   <body>
@@ -190,149 +189,87 @@
               Contact
             </a>
           </li>
-          <li>
-            <a
-              title="Go to project section"
-              href="#project"
-              tabindex="0"
-              translate-key="projects-word"
-            >
-              Projects
-            </a>
-          </li>
-          <li>
+          <li class="u-mobile__display-none">
             <i
               class="ri-arrow-drop-up-line c-header__expand-mode js-header__expand-mode"
               title="Hide header"
               tabindex="0"
             ></i>
           </li>
-          <li>
-            <dropdown
-              id="c-theme-dropdown"
-              class="c-dropdown"
+          <li class="u-mobile__display-none">
+            <select
+              class="c-header__select js-theme-dropdown"
               title="Toggle theme "
               tabindex="0"
             >
-              <ul class="c-dropdown__menu">
-                <li data-theme="Cappuccino">Cappuccino theme</li>
-                <li data-theme="Cioccolato">muffin al Cioccolato theme</li>
-                <li data-theme="High-contrast">high-contrast theme</li>
-              </ul>
-            </dropdown>
+              <option translate-key="cappuccino-theme" value="Cappuccino">
+                ☕ &nbsp;Cappuccino theme
+              </option>
+              <option translate-key="cioccolato-theme" value="Cioccolato">
+                🍫 &nbsp;Cioccolato theme
+              </option>
+              <option translate-key="high-contrast-theme" value="High-contrast">
+                👁️‍🗨️ &nbsp;High-contrast theme
+              </option>
+            </select>
           </li>
-          <li>
-            <dropdown
-              id="c-header__languages"
-              class="js-header__languages"
+          <li class="u-mobile__display-none">
+            <select
+              class="c-header__select js-header__languages"
               title="Change website language"
               tabindex="0"
             >
-              <ul class="c-dropdown__menu">
-                <li data-lng="en">🇺🇸 English</li>
-                <li data-lng="es">🇪🇸 Espanõl</li>
-                <li data-lng="pt-BR">🇧🇷 Português</li>
-              </ul>
-            </dropdown>
+              <option value="en">🇺🇸 &nbsp;English</option>
+              <option value="es">🇪🇸 &nbsp;Espanõl</option>
+              <option value="pt-BR">🇧🇷 &nbsp;Português</option>
+            </select>
           </li>
         </ul>
       </nav>
-      <span class="u-reverse-row-container u-space-between u-mobile__displayIt">
-        <button
-          id="c-header__mobile-button"
-          class="ri-menu-line c-header__mobile-button"
-        ></button>
-        <div id="c-header__mobile-menu">
-          <nav>
-            <ul class="c-header__links">
-              <li>
-                <a
-                  title="Go to home section"
-                  href="#home"
-                  tabindex="0"
-                  translate-key="home-header"
+      <span
+        class="u-reverse-row-container u-center u-space-between u-mobile__displayIt"
+      >
+        <nav class="u-row-container u-gap">
+          <ul class="u-row-container u-gap u-center u-no-list-style">
+            <li>
+              <select
+                class="c-header__select js-theme-dropdown"
+                title="Toggle theme "
+                tabindex="0"
+              >
+                <option translate-key="cappuccino-theme" value="Cappuccino">
+                  ☕ &nbsp;Cappuccino theme
+                </option>
+                <option translate-key="cioccolato-theme" value="Cioccolato">
+                  🍫 &nbsp;Cioccolato theme
+                </option>
+                <option
+                  translate-key="high-contrast-theme"
+                  value="High-contrast"
                 >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  title="Go to about section"
-                  href="#about"
-                  tabindex="0"
-                  translate-key="about-header"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  title="Go to skills section"
-                  href="#skills"
-                  tabindex="0"
-                  translate-key="skills-word"
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  title="Go to contact section"
-                  href="#contact"
-                  tabindex="0"
-                  translate-key="contact-word"
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  title="Go to project section"
-                  href="#project"
-                  tabindex="0"
-                  translate-key="projects-word"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <i
-                  class="ri-arrow-drop-up-line c-header__expand-mode js-header__expand-mode"
-                  title="Hide header"
-                  tabindex="0"
-                ></i>
-              </li>
-              <li>
-                <dropdown
-                  id="c-theme-dropdown"
-                  class="c-dropdown"
-                  title="Toggle theme "
-                  tabindex="0"
-                >
-                  <ul class="c-dropdown__menu">
-                    <li data-theme="Cappuccino">Cappuccino theme</li>
-                    <li data-theme="Cioccolato">muffin al Cioccolato theme</li>
-                    <li data-theme="High-contrast">high-contrast theme</li>
-                  </ul>
-                </dropdown>
-              </li>
-              <li>
-                <dropdown
-                  id="c-header__languages"
-                  class="js-header__languages"
-                  title="Change website language"
-                  tabindex="0"
-                >
-                  <ul class="c-dropdown__menu">
-                    <li data-lng="en">🇺🇸 English</li>
-                    <li data-lng="es">🇪🇸 Espanõl</li>
-                    <li data-lng="pt-BR">🇧🇷 Português</li>
-                  </ul>
-                </dropdown>
-              </li>
-            </ul>
-          </nav>
-        </div>
+                  👁️‍🗨️ &nbsp;High-contrast theme
+                </option>
+              </select>
+            </li>
+            <li>
+              <select
+                class="c-header__select js-header__languages"
+                title="Change website language"
+                tabindex="0"
+              >
+                <option value="en">🇺🇸 &nbsp;English</option>
+                <option value="es">🇪🇸 &nbsp;Espanõl</option>
+                <option value="pt-BR">🇧🇷 &nbsp;Português</option>
+              </select>
+            </li>
+            <li>
+              <a
+                id="c-header__mobile-button"
+                class="ri-menu-line c-header__mobile-button"
+              ></a>
+            </li>
+          </ul>
+        </nav>
         <h1>Douglas Guimarães</h1>
       </span>
     </header>
@@ -349,9 +286,9 @@
       >
         <aside class="u-main-title u-margin">
           <p translate-key="home-phrase">What can I do for you?</p>
-          <strong id="c-typedWord" class="u-highlight-color">A Website.</strong>
+          <strong id="c-typedWord" class="u-highlight-color"></strong>
         </aside>
-        <span id="c-threejs__container"></span>
+        <span id="c-threejs__container" class="u-mobile__display-none"></span>
       </section>
       <section class="c-tip u-center">
         <div class="c-tip__card">
@@ -377,15 +314,45 @@
               About me
             </h1>
             <span id="c-textBoard__switches">
-              <button class="c-textBoard__switch">short version</button>
-              <button class="c-textBoard__switch">long version</button>
+              <button
+                translate-key="professional-word"
+                class="c-textBoard__switch"
+              >
+                Professional
+              </button>
+              <button
+                translate-key="long-history-word"
+                class="c-textBoard__switch"
+              >
+                Long history
+              </button>
             </span>
           </header>
           <article class="c-textBoard__text-container">
-            <div class="c-textBoard__text">
-              <p>oiweqewqeyhkujqwtrjhwqerghiuweru</p>
+            <div class="c-textBoard__text" translate-key="professional-text">
+              <p>
+                I'm Douglas Guimarães, 20 years old, and I'm originally from
+                Juiz de Fora, MG, Brazil. I've been pursuing a degree in
+                Information Systems at Estácio for the past few months.
+              </p>
+
+              <p>
+                I've had a passion for programming since I was 16, and for the
+                last 2 years, I've been working as a freelancer while honing my
+                professional skills. I'm a Fullstack developer, and I undertake
+                various types of projects, ranging from 3D modeling to mobile
+                app development (see the 'skills' section to understand the
+                technologies I use).
+              </p>
+
+              <p>
+                I've also participated in and created some open-source projects
+                (you can find their code on my GitHub). Feel free to get in
+                touch with me through the social media profiles listed in the
+                'contacts' section.
+              </p>
             </div>
-            <div class="c-textBoard__text">
+            <div class="c-textBoard__text" translate-key="long-history-text">
               <p>
                 My name is <span lang="pt-BR">Douglas Guimarães</span>, I am 20
                 years old, a FullStack programmer, and I am pursuing a degree in
@@ -659,7 +626,7 @@
       </section>
       <section id="contact" class="u-column-container u-center">
         <header class="u-center-text">
-          <h1 translate-key="contact-word" class="u-title">contact</h1>
+          <h1 translate-key="contact-word" class="u-title">Contact</h1>
           <h4 translate-key="contact-subtitle" class="u-subtitle">
             Do you want to get in touch with me? well, there are a few ways:
           </h4>
@@ -709,59 +676,7 @@
                 free to come!
               </p>
             </span>
-            <i class="c-grid__icon ri-discord-fill"></i>
-          </a>
-        </div>
-      </section>
-      <section id="project" class="u-column-container u-center">
-        <header class="u-center-text">
-          <h1 translate-key="projects-word" class="u-title">projects</h1>
-          <h4 translate-key="projects-subtitle" class="u-subtitle">
-            Here you can see my project medias, where create content about
-            development.
-          </h4>
-        </header>
-        <div class="c-grid u-half-width u-margin">
-          <a
-            href="https://www.linkedin.com/in/douglas-guimar%C3%A3es-691241263/"
-            target="_blank"
-            class="c-grid__card"
-          >
-            <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="tiktok-text">
-                My tiktok is a way I can interact with different people and talk
-                about development... with a very dubious humor.
-              </p>
-            </span>
-            <i class="c-grid__icon u-tiktok-color ri-tiktok-line"></i>
-          </a>
-          <a href="" target="_blank" class="c-grid__card c-project__card">
-            <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="tiktok-text">
-                Here where I do lives... sometimes.
-              </p>
-            </span>
-            <i class="c-grid__icon u-twitch-color ri-twitch-fill"></i>
-          </a>
-          <a href="" target="_blank" class="c-grid__card c-project__card">
-            <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="youtube-text">
-                My youtube... For a little more complex video, that can'
-              </p>
-            </span>
-            <i class="c-grid__icon u-youtube-color ri-youtube-fill"></i>
-          </a>
-          <a
-            href="https://discord.gg/XhuTC5rKGH"
-            target="_blank"
-            class="c-grid__card c-contact__card"
-          >
-            <span class="c-grid__textfield">
-              <p class="c-grid__text" translate-key="instagram-text">
-                Funny content about me and programming...
-              </p>
-            </span>
-            <i class="c-grid__icon u-instagram-color ri-instagram-fill"></i>
+            <i class="c-grid__icon u-discord-color ri-discord-fill"></i>
           </a>
         </div>
       </section>
