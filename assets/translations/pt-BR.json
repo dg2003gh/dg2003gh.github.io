@@ -1,10 +1,24 @@
 {
+  "typedStrings": [
+    "Um website.",
+    "Um modelo 3D.",
+    "Um app mobile.",
+    "Um jogo.",
+    "O backend da sua aplicação."
+  ],
+  "cappuccino-theme": "☕ &nbsp;tema cappuccino ",
+  "cioccolato-theme": "🍫 &nbsp;tema cioccolato",
+  "high-contrast-theme": "👁️‍🗨️ &nbsp;tema de alto contraste",
   "home-header": "ínicio",
   "home-phrase": "O que posso fazer por você?",
   "first-tip": "Dica: existem alguns temas que podem ser escolhidos no cabeçalho, incluindo um de alto contraste.",
 
   "about-header": "Sobre",
   "about-section-title": "Sobre mim",
+  "professional-word": "Profissional",
+  "long-history-word": "Longa história",
+  "professional-text": "<p>Eu sou Douglas Guimarães, tenho 20 anos e sou natural de Juiz de Fora, MG, Brasil. Estou me graduando em Sistemas de Informação na Estácio de sá faz últimos meses.</p><p>Tenho uma paixão pela programação desde os 16 anos e, nos últimos 2 anos, tenho trabalhado como freelancer, aprimorando minhas habilidades profissionais. Sou um desenvolvedor Fullstack e realizo vários tipos de projetos, desde modelagem 3D até desenvolvimento de apps mobile (veja a seção 'skills' para entender as tecnologias que uso).</p><p>Também participei e criei alguns projetos de código aberto (você pode encontrar o código deles no meu GitHub). Sinta-se à vontade para entrar em contato comigo por meio dos perfis de redes sociais listados na seção 'contatos'.</p>",
+  "long-history-text": "<p>Meu nome é Douglas Guimarães, tenho 20 anos, sou um programador FullStack e estou cursando uma graduação em Sistemas de Informação. Vou te contar uma breve história que encapsula meu AMOR pela programação. Sempre quis seguir essa área? A resposta é não. Quando era criança, queria ser bombeiro. Curioso, não é? Uma profissão completamente diferente do que sou hoje e profundamente apaixonado. Isso aconteceu por volta de 2018 ou até antes. Minha mãe comprou um laptop surrado em uma loja de usados. Sem bateria, apenas um pen drive. Esse pen drive mudaria minha vida, pois continha uma distribuição Linux chamada BigLinux. Naquela época, nem sabia que existia um mundo de código aberto e gratuito fora do Windows. Para mim, era apenas isso, mas não era. Havia muito mais, um mundo inteiramente novo a ser explorado: ideias, conceitos completamente fascinantes e... tudo terminou quando tentei usar uma fonte de energia diferente para o laptop e ele queimou. Mas tudo bem... suponho. Porque a história não termina aqui, anos depois, meu pai comprou um laptop novinho direto da loja. Eu estava extasiado, enquanto meu pai estava... como os pais ficam quando compram algo caro. De qualquer forma, estava lá. Um laptop novo e bonito. Um quarto dele foi para a licença do Windows, até... O disco rígido queimou, e, como o idiota que sou, decidi abri-lo, anulando assim a garantia. No entanto, não vamos pular para conclusões, porque não consegui consertá-lo... Meu pai certamente não ficará feliz com essa informação que acabei de tornar pública. Desculpe, pai. O importante é: você se lembra daquele pen drive com uma distribuição Linux? Ainda o tenho até hoje, e naquela época era muito necessário. Usei o laptop com várias distribuições ao vivo por cerca de dois anos até conseguir comprar um disco rígido com minha mãe. E depois que conheci o Linux, nunca mais o deixei. Bem, eu confesso, talvez no meu segundo ano do ensino médio porque queria jogar Roblox com meu amigo. Mas depois de uma semana, voltei e nunca mais saí. E assim, depois de conhecer o Linux e interagir com sua comunidade e ter que usá-lo e aprender a viver com 3,5GB de armazenamento como disco rígido temporário, decidi que esse era o meu caminho a partir de então. E hoje, aqui estou eu, aspirando a ser um respeitado desenvolvedor Fullstack, sabendo como um garoto que queria ser bombeiro se tornou um desenvolvedor apaixonado, graças a uma tecnologia e duas pessoas que são minha vida.</p>",
   "second-tip": "Dica: clicando em qualquer card você será redirecionado à seu site.",
   "skills-word": "Skills",
   "skills-word-subtitle": "Veja as tecnologias com que eu trabalho!",
@@ -30,9 +44,5 @@
   "telegram-text": "O meu Telegram é mais informal, para uma conversa mais descontraída.",
   "discord-text": "Este é o meu servidor do Discord, é principalmente para meu seguidores, mas sinta-se a vontade para entrar lá!",
   "projects-word": "Projetos",
-  "projects-subtitle": "Aqui você pode ver meus projetos, é onde crio conteúdo sobre desenvolvimento de uma maneira bem humorada e descontraída.  ",
-  "tiktok-text": "",
-  "twitch-text": "",
-  "youtube-text": "",
-  "instagram-text": ""
+  "projects-subtitle": "Aqui você pode ver meus projetos, é onde crio conteúdo sobre desenvolvimento de uma maneira bem humorada e descontraída.  "
 }
