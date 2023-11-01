@@ -1,11 +1,42 @@
 .high-contrast-theme {
+  --clr-text: #fff;
   --clr-gold: #a89e08;
-  --clr-info: #000000;
-  --clr-header: #333333;
-  --clr-hide-header: #4b0082;
-  --clr-primary: #fff;
-  --clr-secondary: #ff80f7;
-  --clr-tertiary: #0a1d57;
-  --clr-fourth: #7ec1f1;
-  --clr-box-shadow: #000;
+  --clr-info: #fff;
+  --clr-header: #0401ff;
+  --clr-hide-header: #00000085;
+  --clr-primary: #000;
+  --clr-secondary: #f33bee;
+  --clr-tertiary: #01ff06;
+  --clr-tertiary-hovered: #000;
+  --clr-fourth: #e86f00;
+  --clr-dropdown-option: #ff0200;
+  --clr-box-shadow: #00000000;
+
+  /* Skills*/
+  --clr-icon-js: #000;
+  --clr-icon-html: #000;
+  --clr-icon-css: #000;
+  --clr-icon-py: #000;
+  --clr-icon-ts: #000;
+  --clr-icon-php: #000;
+  --clr-icon-qt: #000;
+  --clr-icon-gd: #000;
+  --clr-icon-docker: #000;
+  --clr-icon-blender: #000;
+  --clr-icon-gimp: #000;
+  --clr-icon-bash: #000;
+  --clr-icon-linux: #000;
+  --clr-icon-git: #000;
+  --clr-icon-nodejs: #000;
+  --clr-icon-sql: #000;
+  --clr-icon-nextjs: #000;
+
+  /* Contact*/
+  --clr-icon-linkedin: #000;
+  --clr-icon-email: #000;
+  --clr-icon-telegram: #000;
+  --clr-icon-discord: #000;
+
+  --cfg-border-radius: 5px;
+  --cfg-blur: 20px;
 }
