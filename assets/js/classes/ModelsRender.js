@@ -73,7 +73,7 @@ export default class ModelsRender {
   }
 
   setAmbientLight() {
-    const ambientLight = new AmbientLight(0x404040, 2.0);
+    const ambientLight = new AmbientLight(0x404040, 1.0);
     this.scene.add(ambientLight);
   }
 
@@ -96,7 +96,7 @@ export default class ModelsRender {
         room.rotation.x = -50;
         room.rotation.y = -100;
 
-        const light = new DirectionalLight(0xffffff, Math.PI);
+        const light = new DirectionalLight(0xffffff, 1.0);
         light.position.z = 2;
         light.position.y = 6;
 
