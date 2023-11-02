@@ -32,6 +32,17 @@ export default class ModelsRender {
       this.setControls();
       this.setModel();
       this.animate();
+
+      window.addEventListener("resize", () => {
+        this.camera.aspect =
+          this.containerDimensions.width / this.containerDimensions.height;
+        this.camera.updateProjectionMatrix();
+
+        this.renderer.setSize(
+          this.containerDimensions.width,
+          this.containerDimensions.height
+        );
+      });
     } else {
       const warning = WebGL.getWebGLErrorMessage();
       this.container.appendChild(warning);
