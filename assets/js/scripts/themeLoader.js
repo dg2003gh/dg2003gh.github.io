@@ -1,6 +1,8 @@
 const themeDropdowns = document.querySelectorAll(".js-theme-dropdown");
 
 function chooseTheme(theme) {
+  const options = document.querySelectorAll(".js-theme-dropdown option");
+
   switch (theme) {
     case "Cappuccino":
       document.body.classList.remove("cioccolato-theme", "high-contrast-theme");
@@ -14,19 +16,18 @@ function chooseTheme(theme) {
       document.body.classList.remove("cioccolato-theme");
       break;
   }
+
+  options.forEach((option) => {
+    option.value == theme
+      ? (option.selected = true)
+      : (option.selected = false);
+  });
 }
 
 function loadTheme() {
   const getTheme = JSON.parse(localStorage.getItem("theme"));
-  const options = document.querySelectorAll(".js-theme-dropdown option");
 
   if (getTheme == "" || getTheme == null) return;
-
-  options.forEach((option) => {
-    option.value == getTheme
-      ? (option.selected = true)
-      : (option.selected = false);
-  });
 
   chooseTheme(getTheme);
 }
