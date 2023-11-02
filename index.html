@@ -59,26 +59,30 @@
     <link rel="stylesheet" href="./assets/css/themes/high-contrast.css" />
     <link rel="stylesheet" href="./assets/css/themes/icons-color.css" />
 
-    <!---  Website media queries - typical device breakpoints from w3schools.com 2023  --->
     <link
       rel="stylesheet"
       media="only screen and (max-width: 600px)"
-      href="./assets/css/components/mediaQueries/components/grid.css"
+      href="./assets/css/components/mediaQueries/components/grid--mw--600.css"
     />
     <link
       rel="stylesheet"
       media="only screen and (max-width: 700px)"
-      href="./assets/css/components/mediaQueries/components/header.css"
+      href="./assets/css/components/mediaQueries/components/header--mw-700.css"
     />
     <link
       rel="stylesheet"
       media="only screen and (max-width: 1000px)"
-      href="./assets/css/components/mediaQueries/components/textboard.css"
+      href="./assets/css/components/mediaQueries/components/textboard--mw-1000.css"
     />
     <link
       rel="stylesheet"
       media="only screen and (max-width: 700px)"
-      href="./assets/css/utilities/mediaQueries/utilities/utilities.css"
+      href="./assets/css/utilities/mediaQueries/utilities/utilities--mw-700.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 1000px)"
+      href="./assets/css/utilities/mediaQueries/utilities/utilities--mw-1000.css"
     />
 
     <!--- Js Files--->
@@ -182,14 +186,14 @@
               Contact
             </a>
           </li>
-          <li class="u-mobile__display-none">
+          <li class="u-hide">
             <i
               class="ri-arrow-drop-up-line c-header__expand-mode js-header__expand-mode"
               title="Hide header"
               tabindex="0"
             ></i>
           </li>
-          <li class="u-mobile__display-none">
+          <li class="u-hide">
             <select
               class="c-header__select js-theme-dropdown"
               title="Toggle theme "
@@ -206,7 +210,7 @@
               </option>
             </select>
           </li>
-          <li class="u-mobile__display-none">
+          <li class="u-hide">
             <select
               class="c-header__select js-header__languages"
               title="Change website language"
