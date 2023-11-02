@@ -1,7 +1,3 @@
-.u-mobile__display-none {
-  display: none !important;
-}
-
 .u-mobile__container {
   flex-direction: column;
 }
