@@ -20,6 +20,7 @@ function loadTranslation() {
 
   languageDropdowns.forEach((languageDropdown) => {
     languageDropdown.addEventListener("change", () => {
+      window.location.reload(); //temp fix
       setTranslation(languageDropdown.value);
     });
     languageDropdown.value = getLng;
