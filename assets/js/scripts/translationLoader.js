@@ -14,10 +14,10 @@ function setTranslation(lng) {
 }
 
 function loadTranslation() {
-  const getLng = JSON.parse(localStorage.getItem("language"));
+  let getLng = JSON.parse(localStorage.getItem("language"));
 
   if (getLng == null || getLng == "") {
-    const getLng = navigator.language || navigator.userLanguage;
+    getLng = navigator.language || navigator.userLanguage;
     setTranslation(getLng);
   } else {
     setTranslation(getLng);
