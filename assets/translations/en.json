@@ -1,11 +1,5 @@
 {
-  "typedStrings": [
-    "A website.",
-    "A 3D model.",
-    "A mobile app.",
-    "A game.",
-    "The backend of your application."
-  ],
+  "typedStrings": ["A website.", "A 3D model.", "A mobile app.", "A game."],
   "cappuccino-theme": "☕ &nbsp;Cappuccino theme",
   "cioccolato-theme": "🍫 &nbsp;Cioccolato theme",
   "high-contrast-theme": "👁️‍🗨️ &nbsp;High Contrast theme",
