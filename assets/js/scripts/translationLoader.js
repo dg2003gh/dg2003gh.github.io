@@ -3,7 +3,12 @@ import Translator from "../classes/Translator.js";
 const languageDropdowns = document.querySelectorAll(".js-header__languages");
 
 function setTranslation(lng) {
-  const translator = new Translator(lng, "translate-key", true, "#c-typedWord");
+  const translator = new Translator(
+    lng,
+    "translate-key",
+    true,
+    "#c-typed-word"
+  );
   translator.translate();
   localStorage.setItem("language", JSON.stringify(lng));
 }
