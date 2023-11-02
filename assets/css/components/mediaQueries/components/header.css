@@ -19,15 +19,14 @@
   z-index: 100;
   display: flex;
   background-color: var(--clr-tertiary);
-  position: absolute;
-  overflow-y: scroll;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  translate: 100vw 0;
+  translate: 1000vw 0;
   transition: translate 500ms ease-in-out;
 }
 
