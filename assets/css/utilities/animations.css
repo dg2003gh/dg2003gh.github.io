@@ -44,3 +44,9 @@
     transform: rotate(45deg) translate(50px, 50px);
   }
 }
+
+@keyframes rotating-animation {
+  100% {
+    rotate: 360deg;
+  }
+}
