@@ -1,7 +1,8 @@
 .c-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 15px;
+  gap: 20px;
+  padding: 20px;
   background-color: var(--clr-secondary);
   width: 90vw;
   box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
@@ -11,12 +12,11 @@
 .c-grid__card {
   display: flex;
   align-items: center;
-  text-align: center;
   cursor: pointer;
   background-color: var(--clr-tertiary);
-  height: 150px;
-  margin: 15px;
   text-decoration: none;
+  min-height: 150px;
+  max-height: 25vh;
   box-shadow: 5px 5px 5px 5px var(--clr-box-shadow);
   border-radius: var(--cfg-border-radius);
 }
@@ -43,7 +43,6 @@
   opacity: 0;
   font-size: 0;
   width: 90%;
-  margin: 12px;
   overflow-y: scroll;
   transition: font-size 400ms, opacity 800ms;
 }
@@ -60,9 +59,8 @@
 }
 
 .c-grid__icon {
-  font-size: 50px;
-  margin-right: 10px;
-  margin-left: 10px;
+  font-size: clamp(1rem, 3.4rem, 5rem);
+  margin: 0 10px;
   transition: color 500ms;
 }
 
