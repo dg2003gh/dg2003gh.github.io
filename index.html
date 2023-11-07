@@ -121,11 +121,20 @@
       type="module"
       src="./assets/js/classes/Translator.js"
     ></script>
-
     <script
       defer
       type="module"
       src="./assets/js/scripts/translationLoader.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./assets/js/classes/getLastRepos.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./assets/js/scripts/getLastReposConfig.js"
     ></script>
     <script defer type="module" src="./assets/js/scripts/textboard.js"></script>
     <script
@@ -182,6 +191,16 @@
               href="#contact"
               tabindex="0"
               translate-key="contact-word"
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              title="Go to projects section"
+              href="#projects"
+              tabindex="0"
+              translate-key="projects-word"
             >
               Contact
             </a>
@@ -673,6 +692,25 @@
             </span>
             <i class="c-grid__icon u-discord-color ri-discord-fill"></i>
           </a>
+        </div>
+      </section>
+      <section id="projects" class="u-column-container u-center">
+        <header class="u-center-text">
+          <h1 translate-key="projects-word" class="u-title">Projects</h1>
+          <h4 translate-key="projects-subtitle" class="u-subtitle">
+            Here you can see the last 4 public projects that I'm involved on
+            Github! Common, click on them!
+          </h4>
+        </header>
+        <div id="c-lastRepos" class="c-grid u-half-width">
+          <strong class="u-padding u-center u-column-container">
+            Loading available repositories, please make sure you have Internet
+            connection!
+            <i
+              class="ri-loop-left-fill u-rotating-animation u-margin"
+              style="font-size: clamp(1rem, 3rem, 5rem)"
+            ></i>
+          </strong>
         </div>
       </section>
     </main>
