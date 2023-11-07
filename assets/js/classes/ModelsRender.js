@@ -19,8 +19,6 @@ export default class ModelsRender {
     this.far = far;
     this.cameraDistance = cameraDistance;
     this.modelPath = modelPath;
-
-    this.init();
   }
 
   init() {
@@ -117,5 +115,9 @@ export default class ModelsRender {
     this.composer.render();
 
     window.requestAnimationFrame(this.animate.bind(this));
+  }
+
+  destructor() {
+    this.renderer ? this.renderer.dispose() : null;
   }
 }
