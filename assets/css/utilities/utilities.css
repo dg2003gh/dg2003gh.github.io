@@ -39,13 +39,17 @@
   animation: floating-animation 5000ms infinite linear;
 }
 
+.u-rotating-animation {
+  animation: rotating-animation 1000ms infinite linear;
+}
+
 .u-subtitle {
   font-size: clamp(1rem, 0.5rem, 2rem);
-  margin: 10px;
+  margin: 20px 0;
 }
 
 .u-highlight-color {
-  color: var(--clr-gold);
+  color: var(--clr-highlight);
 }
 
 .u-mobile__displayIt {
@@ -67,6 +71,10 @@
 
 .u-half-width {
   width: 50vw;
+}
+
+.u-padding {
+  padding: 10px;
 }
 
 .u-reverse-row-container {
