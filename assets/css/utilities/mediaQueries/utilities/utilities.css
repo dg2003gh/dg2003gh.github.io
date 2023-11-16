@@ -1,0 +1,33 @@
+@media screen and (max-width <= 700px) {
+  .u-mobile__container {
+    flex-direction: column;
+  }
+
+  .u-mobile__displayIt {
+    display: flex !important;
+  }
+
+  .u-mobile__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .u-main-title {
+    text-align: center;
+  }
+
+  #c-threejs__container {
+    width: 100vw;
+  }
+
+  .u-no-list-style {
+    list-style: none;
+  }
+}
+
+@media screen and (max-width <=1000px) {
+  .u-mobile__display-none {
+    display: none !important;
+  }
+}

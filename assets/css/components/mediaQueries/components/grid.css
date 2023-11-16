@@ -1,0 +1,6 @@
+@media screen and (max-width <= 600px) {
+  .c-grid {
+    margin-bottom: 100px;
+    width: 95vw;
+  }
+}
