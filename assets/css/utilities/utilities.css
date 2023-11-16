@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.u-self-center {
+  align-self: center;
+}
+
 .u-column-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +14,11 @@
 
 .u-title {
   font-size: clamp(2rem, 1.5rem, 3rem);
+}
+
+.u-fit-content {
+  width: fit-content;
+  height: fit-content;
 }
 
 .u-margin {
@@ -46,10 +55,6 @@
 .u-subtitle {
   font-size: clamp(1rem, 0.5rem, 2rem);
   margin: 20px 0;
-}
-
-.u-highlight-color {
-  color: var(--clr-highlight);
 }
 
 .u-mobile__displayIt {
