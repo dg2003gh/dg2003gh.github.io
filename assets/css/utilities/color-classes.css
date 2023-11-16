@@ -1,0 +1,6 @@
+.u-color__highlight {
+  color: var(--clr-highlight);
+}
+.u-background__primary {
+  background-color: var(--clr-primary);
+}
