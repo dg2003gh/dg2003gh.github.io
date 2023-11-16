@@ -28,7 +28,7 @@ export default class Translator {
       },
     };
 
-    fetch("./assets/translations/" + this.lng + ".json", options)
+    fetch("/assets/translations/" + this.lng + ".json", options)
       .then((response) => {
         if (response.ok) return response.json();
         else throw new Error("File not found!");
