@@ -1,11 +1,11 @@
-const boardSwitches = document.querySelectorAll(".c-textBoard__switch");
+const boardSwitches = document.querySelectorAll(".c-text-board__switch");
 
 boardSwitches.forEach((boardSwitch) => {
   boardSwitch.onclick = () => {
     const boardTextContainer = document.querySelectorAll(
-      ".c-textBoard__text-container .c-textBoard__text"
+      ".c-text-board__text-container .c-text-board__text"
     );
-    const switchContainer = document.getElementById("c-textBoard__switches");
+    const switchContainer = document.getElementById("c-text-board__switches");
     if (
       switchContainer.style.getPropertyValue("--js-translateX") == "0px" ||
       switchContainer.style.getPropertyValue("--js-translateX") == ""
