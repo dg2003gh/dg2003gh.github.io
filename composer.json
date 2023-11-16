@@ -1,0 +1,19 @@
+{
+  "name": "dg2003gh/dg2003gh.github.io",
+  "type": "project",
+  "require": {
+    "matthiasmullie/minify": "^1.3"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Dg2003\\Dg2003ghGithubIo\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Douglas Guimarães"
+    }
+  ],
+  "minimum-stability": "stable"
+}
