@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Douglas Guimarães" />
+    <title>Portfolio | Douglas Guimarães</title>
+    <!---  Website Icons --->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/imgs/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/imgs/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/imgs/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/imgs/icons/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      href="../assets/imgs/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <!--- Website Icon Libraries --->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+      async
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <!---Website style--->
+    <link rel="stylesheet" href="./style.min.css" />
+    <!--- Js Files--->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+      integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./script.min.js"></script>
+  </head>
+  <body>
+    <noscript>
+      Sorry, This website don't will work properly with script support.
+    </noscript>
+    <header class="c-header js-header">
+      <nav id="c-header__menu">
+        <ul class="c-header__links">
+          <li>
+            <a
+              title="Go to home section"
+              href="#home"
+              tabindex="0"
+              translate-key="home-header"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              title="Go to about section"
+              href="#about"
+              tabindex="0"
+              translate-key="about-header"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              title="Go to skills section"
+              href="#skills"
+              tabindex="0"
+              translate-key="skills-word"
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              title="Go to contact section"
+              href="#contact"
+              tabindex="0"
+              translate-key="contact-word"
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              title="Go to projects section"
+              href="#projects"
+              tabindex="0"
+              translate-key="projects-word"
+            >
+              Contact
+            </a>
+          </li>
+          <li class="u-hide">
+            <i
+              class="ri-arrow-drop-up-line c-header__expand-mode js-header__expand-mode"
+              title="Hide header"
+              tabindex="0"
+            ></i>
+          </li>
+          <li class="u-hide">
+            <select
+              class="c-header__select js-theme-dropdown"
+              title="Toggle theme "
+              tabindex="0"
+            >
+              <option translate-key="cappuccino-theme" value="Cappuccino">
+                ☕ &nbsp;Cappuccino theme
+              </option>
+              <option translate-key="cioccolato-theme" value="Cioccolato">
+                🍫 &nbsp;Cioccolato theme
+              </option>
+              <option translate-key="high-contrast-theme" value="High-contrast">
+                👁️‍🗨️ &nbsp;High-contrast theme
+              </option>
+            </select>
+          </li>
+          <li class="u-hide">
+            <select
+              class="c-header__select js-header__languages"
+              title="Change website language"
+              tabindex="0"
+            >
+              <option value="en">🇺🇸 &nbsp;English</option>
+              <option value="es-ES">🇪🇸 &nbsp;Espanõl</option>
+              <option value="pt-BR">🇧🇷 &nbsp;Português</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      <span
+        class="u-reverse-row-container u-center u-space-between u-mobile__displayIt"
+      >
+        <nav class="u-row-container u-gap">
+          <ul class="u-row-container u-gap u-center u-no-list-style">
+            <li>
+              <select
+                class="c-header__select js-theme-dropdown"
+                title="Toggle theme "
+                tabindex="0"
+              >
+                <option translate-key="cappuccino-theme" value="Cappuccino">
+                  ☕ &nbsp;Cappuccino theme
+                </option>
+                <option translate-key="cioccolato-theme" value="Cioccolato">
+                  🍫 &nbsp;Cioccolato theme
+                </option>
+                <option
+                  translate-key="high-contrast-theme"
+                  value="High-contrast"
+                >
+                  👁️‍🗨️ &nbsp;High-contrast theme
+                </option>
+              </select>
+            </li>
+            <li>
+              <select
+                class="c-header__select js-header__languages"
+                title="Change website language"
+                tabindex="0"
+              >
+                <option value="en">🇺🇸 &nbsp;English</option>
+                <option value="es-ES">🇪🇸 &nbsp;Espanõl</option>
+                <option value="pt-BR">🇧🇷 &nbsp;Português</option>
+              </select>
+            </li>
+            <li>
+              <a
+                id="c-header__mobile-button"
+                class="ri-menu-line c-header__mobile-button"
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <h1>Douglas Guimarães</h1>
+      </span>
+    </header>
+    <main>
+      <div id="c-background-container">
+        <i class="u-shape u-circle"></i>
+        <i class="u-shape u-circle"></i>
+        <i class="u-shape"></i>
+        <i class="u-shape"></i>
+      </div>
+      <section id="home" class="u-align-v u-space-between">
+        <aside
+          class="u-main-title u-margin u-mobile__container u-mobile__center"
+        >
+          <p translate-key="home-phrase">What can I do for you?</p>
+          <span>
+            <strong id="c-typed-word" class="u-highlight-color"></strong>
+          </span>
+        </aside>
+        <span id="c-threejs__container" class="u-mobile__display-none"></span>
+      </section>
+      <section class="c-tip u-center">
+        <div class="c-tip__card">
+          <span class="c-tip__bookmark">
+            <i class="ri-information-line c-tip__icon"></i>
+          </span>
+          <p class="c-tip__text" translate-key="first-tip">
+            Tip: there are some themes that you can choose on header, including
+            a high-contrast one.
+          </p>
+        </div>
+        <span class="c-tip__arrows"> </span>
+        <span class="c-tip__arrows"></span>
+        <span class="c-tip__arrows"></span>
+      </section>
+      <section
+        id="about"
+        class="u-row-container u-space-between u-mobile__center"
+      >
+        <article class="c-text-board u-center u-margin u-column-container">
+          <header class="u-column-container u-center">
+            <h1 translate-key="about-section-title" class="u-title u-margin">
+              About me
+            </h1>
+            <span id="c-text-board__switches">
+              <button translate-key="resume-word" class="c-text-board__switch">
+                resume
+              </button>
+              <button
+                translate-key="long-history-word"
+                class="c-text-board__switch"
+              >
+                Long history...
+              </button>
+            </span>
+          </header>
+          <article class="c-text-board__text-container">
+            <div class="c-text-board__text" translate-key="resume-text">
+              <p>
+                I'm Douglas Guimarães, 20 years old, and I'm originally from
+                Juiz de Fora, MG, Brazil. I've been pursuing a degree in
+                Information Systems at Estácio for the past few months.
+              </p>
+
+              <p>
+                I've had a passion for programming since I was 16, and for the
+                last 2 years, I've been working as a freelancer while honing my
+                professional skills. I'm a Fullstack developer, and I undertake
+                various types of projects, ranging from 3D modeling to mobile
+                app development (see the 'skills' section to understand the
+                technologies I use).
+              </p>
+
+              <p>
+                I've also participated in and created some open-source projects
+                (you can find their code on my GitHub). Feel free to get in
+                touch with me through the social media profiles listed in the
+                'contacts' section.
+              </p>
+            </div>
+            <div class="c-text-board__text" translate-key="long-history-text">
+              <p>
+                My name is <span lang="pt-BR">Douglas Guimarães</span>, I am 20
+                years old, a FullStack programmer, and I am pursuing a degree in
+                Information Systems. I'm going to tell you a short story that
+                encapsulates my LOVE for programming.
+              </p>
+              <p>
+                I've always been a boy who wanted to pursue this area? The
+                answer is no. When I was little, I wanted to be a firefighter.
+                Curious, right? A completely different profession from what I am
+                today and deeply passionate about. This happened around 2018 or
+                even earlier. My mother bought me a beaten-up laptop at a thrift
+                store. No battery, just a USB drive. That USB drive would change
+                my life because it contained a Linux distribution called
+                BigLinux. At that time, I didn't even know there was a whole
+                open-source and free world outside of Windows. For me, it was
+                just that, but it wasn't. There was so much more, a whole new
+                world to be explored: ideas, completely mesmerizing concepts,
+                and... it all ended when I tried to use a different power source
+                for the laptop and it got fried. But okay... I guess. Because
+                the story doesn't end here, as years later, my father bought me
+                a brand new laptop straight from the store. I was ecstatic,
+                while my dad was... as parents are when they buy something that
+                costs an arm and a leg.
+              </p>
+              <p>
+                Anyway, it was there. A beautiful, brand new laptop. A quarter
+                of it went to the Windows license, until... The hard drive
+                burned out, and like the idiot that I am, I decided to open it,
+                thus voiding its warranty. However, let's not jump to
+                conclusions, because I couldn't fix it...
+              </p>
+              <p>
+                My father will certainly not be happy with this information that
+                I just made public. Sorry, Dad. The important thing is, do you
+                remember that USB drive with a Linux distro? I still have it to
+                this day, and at that time, it was very necessary. I used the
+                laptop with various live distros for about two years until I
+                could buy a hard drive with my mom. And after I got to know
+                Linux, I never left it. Okay, I confess, maybe in my second year
+                of high school because I wanted to play Roblox with my friend.
+                But after a week, I returned, and I never left again. And so,
+                after getting to know Linux and engaging with its community, and
+                having to use it and learn to live with 3.5GB of storage as a
+                temporary hard drive, I decided that this was my path from then
+                on.
+              </p>
+              <p>
+                And today, here I am, aspiring to be a respected Fullstack
+                developer, knowing how a boy who wanted to be a firefighter is
+                now a passionate developer thanks to one technology and two
+                people who are my life.
+              </p>
+            </div>
+          </article>
+          <div class="c-text-board__bookmark"></div>
+        </article>
+        <article class="u-margin u-mobile__display-none">
+          <img
+            src="../assets/imgs/douglas_photo.png"
+            alt="Douglas photo"
+            width="351px"
+            height="452px"
+          />
+        </article>
+      </section>
+      <section class="c-tip u-center">
+        <div class="c-tip__card">
+          <span class="c-tip__bookmark">
+            <i class="ri-information-line c-tip__icon"></i>
+          </span>
+          <p class="c-tip__text" translate-key="second-tip">
+            Tip: you can click on any card to go to their websites
+          </p>
+        </div>
+        <span class="c-tip__arrows"> </span>
+        <span class="c-tip__arrows"></span>
+        <span class="c-tip__arrows"></span>
+      </section>
+      <section id="skills" class="c-skills u-column-container u-center">
+        <article>
+          <header class="u-center-text">
+            <h1 class="u-title u-center-text" translate-key="skills-word">
+              Skills
+            </h1>
+            <h4 translate-key="skills-word-subtitle" class="u-subtitle">
+              see the technologies that I work with!
+            </h4>
+          </header>
+          <div class="c-grid">
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="javascript-text">
+                  JavaScript is a versatile language used for web development
+                  and beyond!
+                </p>
+              </span>
+              <i class="c-grid__icon u-js-color devicon-javascript-plain"></i>
+            </a>
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="html-text">
+                  HTML is a hypertext Markdown Language used to create websites.
+                </p>
+              </span>
+              <i class="c-grid__icon u-html-color devicon-html5-plain"></i>
+            </a>
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="css-text">
+                  CSS is a stylesheet technology that allows us to style HTML
+                  documents.
+                </p>
+              </span>
+              <i class="c-grid__icon u-css-color devicon-css3-plain"></i>
+            </a>
+            <a
+              href="https://www.python.org/"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="python-text">
+                  Python is a simply and intuitive language that is used in all
+                  world.
+                </p>
+              </span>
+              <i class="c-grid__icon u-py-color devicon-python-plain"></i>
+            </a>
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="typescript-text">
+                  Typescript is a superset of javascript. The main difference is
+                  that is strongly typed.
+                </p>
+              </span>
+              <i class="c-grid__icon u-ts-color devicon-typescript-plain"></i>
+            </a>
+            <a href="https://www.php.net/" target="_blank" class="c-grid__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="php-text">
+                  PHP is a server side language which powers approximately 80%
+                  of the websites.
+                </p>
+              </span>
+              <i class="c-grid__icon u-php-color devicon-php-plain"></i>
+            </a>
+            <a href="https://www.qt.io/" target="_blank" class="c-grid__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="qt-text">
+                  QT is a powerful C++ framework that allow us to create
+                  cross-platform interfaces .
+                </p>
+              </span>
+              <i class="c-grid__icon u-qt-color devicon-qt-plain"></i>
+            </a>
+            <a
+              href="https://godotengine.org/"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="godot-text">
+                  Godot is a robust open-source game engine used to creating 3D
+                  and 2D games.
+                </p>
+              </span>
+              <i class="c-grid__icon u-gd-color devicon-godot-plain"></i>
+            </a>
+            <a
+              href="https://www.docker.com/"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="docker-text">
+                  Docker is a platform for software containerization and
+                  deployment.
+                </p>
+              </span>
+              <i class="c-grid__icon u-docker-color devicon-docker-plain"></i>
+            </a>
+            <a
+              href="https://www.gimp.org/"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="postgresql-text">
+                  PostgreSQL is a powerful, open source object-relational
+                  database system with over 35 years of active development that
+                  has earned it a strong reputation for reliability, feature
+                  robustness, and performance.
+                </p>
+              </span>
+              <i class="c-grid__icon u-sql-color devicon-postgresql-plain"></i>
+            </a>
+            <a
+              href="https://pt.wikipedia.org/wiki/Shell_script"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="bash-text">
+                  Bash is the most used shell variant in the world.
+                </p>
+              </span>
+              <i class="c-grid__icon u-bash-color devicon-bash-plain"></i>
+            </a>
+            <a href="https://kernel.org/" target="_blank" class="c-grid__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="linux-text">
+                  Linux is open-source project with approximated 22.000
+                  contributors.
+                </p>
+              </span>
+              <i class="c-grid__icon u-linux-color devicon-linux-plain"></i>
+            </a>
+            <a href="https://git-scm.com/" target="_blank" class="c-grid__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="git-text">
+                  Git is version control system for software development.
+                </p>
+              </span>
+              <i class="c-grid__icon u-git-color devicon-git-plain"></i>
+            </a>
+            <a
+              href="https://nodejs.org/en"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="node-text">
+                  Node.js is a javascript server-side runtime.
+                </p>
+              </span>
+              <i class="c-grid__icon u-nodejs-color devicon-nodejs-plain"></i>
+            </a>
+            <a
+              href="https://nodejs.org/en"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text" translate-key="nextjs-text">
+                  Next js is a powerful
+                </p>
+              </span>
+              <i
+                class="c-grid__icon u-nextjs-color devicon-nextjs-original"
+              ></i>
+            </a>
+          </div>
+        </article>
+      </section>
+      <section id="contact" class="u-column-container u-center">
+        <header class="u-center-text">
+          <h1 translate-key="contact-word" class="u-title">Contact</h1>
+          <h4 translate-key="contact-subtitle" class="u-subtitle">
+            Do you want to get in touch with me? well, there are a few ways:
+          </h4>
+        </header>
+        <form
+          id="c-contact__form"
+          method="POST"
+          class="c-text-board u-column-container u-gap u-fit-content"
+        >
+          <label for="c-user__name" class="c-text-board__label"> Name </label>
+          <input
+            id="c-user__name"
+            name="user_name"
+            type="text"
+            required
+            class="c-text-board__input"
+          />
+          <label for="c-user__email" class="c-text-board__label">
+            E-mail
+          </label>
+          <input
+            id="c-user__email"
+            name="user_email"
+            type="email"
+            required
+            class="c-text-board__input"
+          />
+          <label for="c-user__subject" class="c-text-board__label">
+            Subject
+          </label>
+          <input
+            id="c-user__subject"
+            name="user_subject"
+            type="text"
+            required
+            class="c-text-board__input"
+          />
+          <label
+            for="c-user__message"
+            required
+            class="c-text-board__label u-self-center"
+          >
+            Your message
+          </label>
+          <textarea
+            id="c-user__message"
+            name="user_message"
+            cols="30"
+            rows="10"
+            class="c-text-board__input"
+          ></textarea>
+          <button type="submit" class="c-text-board__button u-gap">
+            Send message
+          </button>
+          <div class="c-text-board__bookmark"></div>
+        </form>
+      </section>
+      <section id="projects" class="u-column-container u-center">
+        <header class="u-center-text">
+          <h1 translate-key="projects-word" class="u-title">Projects</h1>
+          <h4 translate-key="projects-subtitle" class="u-subtitle">
+            Here you can see the last 4 public projects that I'm involved on
+            Github! Common, click on them!
+          </h4>
+        </header>
+        <div id="c-lastRepos" class="c-grid u-half-width">
+          <strong class="u-padding u-center u-column-container">
+            Loading available repositories, please make sure you have Internet
+            connection!
+            <i
+              class="ri-loop-left-fill u-rotating-animation u-margin"
+              style="font-size: clamp(1rem, 3rem, 5rem)"
+            ></i>
+          </strong>
+        </div>
+      </section>
+    </main>
+    <footer class="c-footer">
+      <ul class="c-footer__links u-row-container u-gap u-center">
+        <li>
+          <a
+            class="devicon-github-original"
+            aria-label="Go to Douglas github page."
+            title="Go to Douglas  github page."
+            href="https://github.com/dg2003gh"
+            tabindex="0"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="devicon-linkedin-plain"
+            aria-label="Go to Douglas linkedin page."
+            title="Go to Douglas  linkedin page."
+            href="https://www.linkedin.com/in/douglas-guimar%C3%A3es-691241263/"
+            tabindex="0"
+          ></a>
+        </li>
+      </ul>
+      <p id="copyright"></p>
+    </footer>
+  </body>
+</html>
