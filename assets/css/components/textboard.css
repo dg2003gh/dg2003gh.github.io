@@ -1,4 +1,4 @@
-.c-textBoard {
+.c-text-board {
   position: relative;
   background-color: var(--clr-secondary);
   text-align: justify;
@@ -10,7 +10,7 @@
   border-radius: var(--cfg-border-radius);
 }
 
-#c-textBoard__switches {
+#c-text-board__switches {
   position: relative;
   display: flex;
   width: fit-content;
@@ -21,7 +21,7 @@
   box-shadow: 5px 5px var(--clr-box-shadow);
 }
 
-#c-textBoard__switches::before {
+#c-text-board__switches::before {
   content: "";
   position: absolute;
   background-color: var(--clr-tertiary-hovered);
@@ -32,7 +32,7 @@
   transition: all 500ms ease-in-out;
 }
 
-.c-textBoard__switch {
+.c-text-board__switch {
   z-index: 2;
   font-size: clamp(1rem, 1.5rem, 2rem);
   cursor: pointer;
@@ -45,14 +45,14 @@
   transition: background-color 500ms;
 }
 
-.c-textBoard__text-container {
+.c-text-board__text-container {
   display: flex;
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
 
-.c-textBoard__text {
+.c-text-board__text {
   min-width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -61,7 +61,7 @@
   transition: translate 500ms ease-in-out;
 }
 
-.c-textBoard__bookmark {
+.c-text-board__bookmark {
   position: absolute;
   background-color: var(--clr-tertiary);
   top: 0;
@@ -69,5 +69,29 @@
   width: 30px;
   height: 100%;
   box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
+  border-radius: var(--cfg-border-radius);
+}
+
+.c-text-board__label {
+  background-color: var(--clr-fourth);
+  text-align: center;
+  width: fit-content;
+  padding: 8px 4px;
+  border-radius: var(--cfg-border-radius);
+}
+.c-text-board__input {
+  background-color: var(--clr-tertiary);
+  border: transparent;
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  border-radius: var(--cfg-border-radius);
+}
+
+.c-text-board__button {
+  background-color: var(--clr-fourth);
+  cursor: pointer;
+  border: transparent;
+  padding: 10px;
   border-radius: var(--cfg-border-radius);
 }
