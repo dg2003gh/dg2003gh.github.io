@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="./assets/css/components/grid.css" />
     <link rel="stylesheet" href="./assets/css/components/tip.css" />
     <link rel="stylesheet" href="./assets/css/components/background.css" />
+    <link rel="stylesheet" href="./assets/css/components/hightlights.css" />
     <link rel="stylesheet" href="./assets/css/components/footer.css" />
     <!--UTILITIES-->
     <link rel="stylesheet" href="./assets/css/utilities/animations.css" />
@@ -57,6 +58,7 @@
     <link rel="stylesheet" href="./assets/css/themes/cappuccino--root.css" />
     <link rel="stylesheet" href="./assets/css/themes/cioccolato.css" />
     <link rel="stylesheet" href="./assets/css/themes/high-contrast.css" />
+    <link rel="stylesheet" href="./assets/css/themes/nuovo-moderno.css" />
     <link rel="stylesheet" href="./assets/css/themes/icons-color.css" />
 
     <link
@@ -188,6 +190,16 @@
           </li>
           <li>
             <a
+              title="Go to certifications section"
+              href="#certs"
+              tabindex="0"
+              translate-key="certs-word"
+            >
+              Certs
+            </a>
+          </li>
+          <li>
+            <a
               title="Go to contact section"
               href="#contact"
               tabindex="0"
@@ -203,7 +215,7 @@
               tabindex="0"
               translate-key="projects-word"
             >
-              Contact
+              Projects
             </a>
           </li>
           <li class="u-hide">
@@ -219,13 +231,22 @@
               title="Toggle theme "
               tabindex="0"
             >
-              <option translate-key="cappuccino-theme" value="Cappuccino">
+              <option
+                translate-key="nuovo-moderno-theme"
+                value="nuovo-moderno-theme"
+              >
+                ☕ &nbsp;nuovo stile moderno theme
+              </option>
+              <option translate-key="cappuccino-theme" value="cappuccino-theme">
                 ☕ &nbsp;Cappuccino theme
               </option>
-              <option translate-key="cioccolato-theme" value="Cioccolato">
+              <option translate-key="cioccolato-theme" value="cioccolato-theme">
                 🍫 &nbsp;Cioccolato theme
               </option>
-              <option translate-key="high-contrast-theme" value="High-contrast">
+              <option
+                translate-key="high-contrast-theme"
+                value="high-contrast-theme"
+              >
                 👁️‍🗨️ &nbsp;High-contrast theme
               </option>
             </select>
@@ -308,6 +329,69 @@
         </aside>
         <span id="c-threejs__container" class="u-mobile__display-none"></span>
       </section>
+      <section>
+        <header class="u-column-container u-center">
+          <h1 class="u-title u-margin" translate-key="c-highlights">
+            <b class="u-highlight-color">Highlight</b>
+            projects
+          </h1>
+          <span class="c-hightlights">
+            <div class="c-textBoard u-container-width u-radius">
+              <div class="c-textBoard__bookmark"></div>
+              <img
+                src="./assets/imgs/highlights/cloud-analyzer.png"
+                width="400"
+              />
+              <a
+                class="u-highlight-color"
+                href="https://cloud-analyzer.finituz.com"
+                target="_blank"
+              >
+                Finituz Cloud security analyzer
+              </a>
+            </div>
+            <div class="c-textBoard u-container-width u-radius">
+              <div class="c-textBoard__bookmark"></div>
+              <img
+                src="./assets/imgs/highlights/finituz-blog.png"
+                width="400"
+              />
+              <a
+                class="u-highlight-color"
+                href="https://finituz.com/en/blog"
+                target="_blank"
+              >
+                Blog Finituz
+              </a>
+            </div>
+            <div class="c-textBoard u-container-width u-radius">
+              <div class="c-textBoard__bookmark"></div>
+              <img
+                src="./assets/imgs/highlights/finituz-studio.png"
+                width="400"
+              />
+              <a
+                class="u-highlight-color"
+                href="https://finituz.com"
+                target="_blank"
+              >
+                Finituz.com
+              </a>
+            </div>
+            <div class="c-textBoard u-container-width u-radius">
+              <div class="c-textBoard__bookmark"></div>
+              <img src="./assets/imgs/highlights/genios.png" width="400" />
+              <a
+                class="u-highlight-color"
+                href="https://me.finituz.com/Quiz-Genios-ao-longo-da-historia"
+                target="_blank"
+              >
+                Gênios ao longo da história - Quiz Game
+              </a>
+            </div>
+          </span>
+        </header>
+      </section>
       <section class="c-tip u-center">
         <div class="c-tip__card">
           <span class="c-tip__bookmark">
@@ -324,7 +408,7 @@
       </section>
       <section
         id="about"
-        class="u-row-container u-space-between u-mobile__center"
+        class="u-row-container u-space-between u-padding u-mobile__center"
       >
         <article class="c-textBoard u-center u-margin u-column-container">
           <header class="u-column-container u-center">
@@ -427,10 +511,11 @@
         </article>
         <article class="u-margin u-mobile__display-none">
           <img
+            class="u-lite-img"
             src="./assets/imgs/douglas_photo.png"
             alt="Douglas photo"
-            width="351px"
-            height="452px"
+            width="500"
+            height="500"
           />
         </article>
       </section>
@@ -639,6 +724,53 @@
           </div>
         </article>
       </section>
+      <section id="certs" class="c-skills u-column-container u-center">
+        <article>
+          <header class="u-center-text">
+            <h1 class="u-title u-center-text" translate-key="certs-word">
+              Certifications
+            </h1>
+            <h4 class="u-subtitle" translate-key="certs-subtitle">
+              Here you can see my certifications:
+            </h4>
+          </header>
+          <div class="c-grid u-half-width">
+            <!-- AWS Solutions Architect -->
+            <a href="#" target="_blank" class="c-grid__card">
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
+                  AWS Certified Solutions Architect – Associate<br />
+                  Issued Jun 2024 · Expires Jun 2027
+                </p>
+              </span>
+              <img
+                src="./assets/imgs/badgets/aws-architect.png"
+                alt="AWS Certified badge"
+                class="c-grid__icon"
+                width="128"
+              />
+            </a>
+            <a
+              href="https://www.your-link-to-cert.pdf"
+              target="_blank"
+              class="c-grid__card"
+            >
+              <span class="c-grid__textfield">
+                <p class="c-grid__text">
+                  AWS Certified Cloud Practitioner<br />
+                  Issued Mar 2024 · Expires Mar 2027
+                </p>
+              </span>
+              <img
+                src="./assets/imgs/badgets/aws-practitioner.png"
+                alt="AWS Certified Cloud Practitioner Badge"
+                class="c-grid__icon"
+                width="128"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
       <section id="contact" class="u-column-container u-center">
         <header class="u-center-text">
           <h1 translate-key="contact-word" class="u-title">Contact</h1>
@@ -661,7 +793,7 @@
             <i class="c-grid__icon u-linkedin-color ri-linkedin-box-fill"></i>
           </a>
           <a
-            href="mailto:dg2003gh@gmail.com"
+            href="mailto:douglas.guimaraes.2120@gmail.com"
             target="_blank"
             class="c-grid__card c-contact__card"
           >

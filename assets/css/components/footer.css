@@ -12,4 +12,5 @@
   font-size: clamp(0.5rem, 1.5rem, 2rem);
   list-style: none;
   cursor: pointer;
+  margin-bottom: 20px;
 }

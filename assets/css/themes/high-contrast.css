@@ -1,42 +1,44 @@
 .high-contrast-theme {
-  --clr-text: #fff;
+  /* Base Colors */
+  --clr-text: #ffffff;
   --clr-gold: #a89e08;
-  --clr-info: #fff;
-  --clr-header: #0401ff;
+  --clr-info: #ffffff;
+  --clr-header: #3c3cff;
   --clr-hide-header: #00000085;
-  --clr-primary: #000;
+  --clr-primary: #000000;
   --clr-secondary: #f33bee;
   --clr-tertiary: #01ff06;
-  --clr-tertiary-hovered: #000;
+  --clr-tertiary-hovered: #222222;
   --clr-fourth: #e86f00;
-  --clr-dropdown-option: #ff0200;
-  --clr-box-shadow: #00000000;
+  --clr-dropdown-option: #ff4444;
+  --clr-box-shadow: rgba(255, 255, 255, 0.08);
 
-  /* Skills*/
-  --clr-icon-js: #000;
-  --clr-icon-html: #000;
-  --clr-icon-css: #000;
-  --clr-icon-py: #000;
-  --clr-icon-ts: #000;
-  --clr-icon-php: #000;
-  --clr-icon-qt: #000;
-  --clr-icon-gd: #000;
-  --clr-icon-docker: #000;
-  --clr-icon-blender: #000;
-  --clr-icon-gimp: #000;
-  --clr-icon-bash: #000;
-  --clr-icon-linux: #000;
-  --clr-icon-git: #000;
-  --clr-icon-nodejs: #000;
-  --clr-icon-sql: #000;
-  --clr-icon-nextjs: #000;
+  /* Skills Icons - white for visibility */
+  --clr-icon-js: #ffffff;
+  --clr-icon-html: #ffffff;
+  --clr-icon-css: #ffffff;
+  --clr-icon-py: #ffffff;
+  --clr-icon-ts: #ffffff;
+  --clr-icon-php: #ffffff;
+  --clr-icon-qt: #ffffff;
+  --clr-icon-gd: #ffffff;
+  --clr-icon-docker: #ffffff;
+  --clr-icon-blender: #ffffff;
+  --clr-icon-gimp: #ffffff;
+  --clr-icon-bash: #ffffff;
+  --clr-icon-linux: #ffffff;
+  --clr-icon-git: #ffffff;
+  --clr-icon-nodejs: #ffffff;
+  --clr-icon-sql: #ffffff;
+  --clr-icon-nextjs: #ffffff;
 
-  /* Contact*/
-  --clr-icon-linkedin: #000;
-  --clr-icon-email: #000;
-  --clr-icon-telegram: #000;
-  --clr-icon-discord: #000;
+  /* Contact Icons - unified visibility */
+  --clr-icon-linkedin: #ffffff;
+  --clr-icon-email: #ffffff;
+  --clr-icon-telegram: #ffffff;
+  --clr-icon-discord: #ffffff;
 
-  --cfg-border-radius: 5px;
-  --cfg-blur: 20px;
+  /* UI Tweaks */
+  --cfg-border-radius: 6px;
+  --cfg-blur: 24px;
 }

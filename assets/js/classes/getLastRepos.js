@@ -29,8 +29,8 @@ export default class getLastRepos {
             <span class="c-grid__textfield">
               <article class="c-grid__text u-column-container u-gap">
               <h3>${repo.name}</h3>
-                <p>${description}</p>
-                <footer class="c-grid__footer">
+                <p title="${description}">${description.length > 120 ? description.slice(0, 120).concat("...") : description}</p>
+                <footer class="c-grid__footer u-highlight-color">
                 Main language: ${repo.language}
                 </footer>
               </article>
@@ -44,6 +44,33 @@ export default class getLastRepos {
       })
       .catch((error) => {
         console.error(error);
+      });
+  }
+
+  async fetchImg(repoName) {
+    const url = `https://api.github.com/repos/${this.username}/${repoName}/contents/`;
+
+    return fetch(url)
+      .then((res) => {
+        if (!res.ok) throw new Error("Erro ao buscar conteúdo do repositório");
+        return res.json();
+      })
+      .then((files) => {
+        // Filtrar arquivos que sejam imagens
+        const imageFile = files.find(
+          (file) =>
+            file.type === "file" && /\.(png|jpe?g|gif|webp)$/i.test(file.name),
+        );
+
+        if (imageFile) {
+          return imageFile.download_url; // URL direta da imagem
+        } else {
+          return null; // Sem imagem na raiz
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        return null;
       });
   }
 }

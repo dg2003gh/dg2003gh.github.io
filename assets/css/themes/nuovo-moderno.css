@@ -1,0 +1,41 @@
+.nuovo-moderno-theme {
+  --clr-text: #eaeef3;
+  --clr-highlight: #00ffc3;
+  --clr-info: #3abaff;
+  --clr-header: rgba(15, 15, 15, 0.7);
+  --clr-hide-header: rgba(15, 15, 15, 0.4);
+  --clr-primary: #12151a;
+  --clr-secondary: #1e2128;
+  --clr-tertiary: #252a33;
+  --clr-tertiary-hovered: #2e3542;
+  --clr-fourth: #3d4859;
+  --clr-dropdown-option: #1b1f27;
+
+  --clr-icon-js: #f7df1e;
+  --clr-icon-html: #ff5722;
+  --clr-icon-css: #2196f3;
+  --clr-icon-py: #ffcc00;
+  --clr-icon-ts: #3178c6;
+  --clr-icon-php: #8993be;
+  --clr-icon-qt: #41cd52;
+  --clr-icon-gd: #478cbf;
+  --clr-icon-docker: #0db7ed;
+  --clr-icon-blender: #f5792a;
+  --clr-icon-gimp: #5c5543;
+  --clr-icon-bash: #4eaa25;
+  --clr-icon-linux: #ffcc00;
+  --clr-icon-git: #f14e32;
+  --clr-icon-nodejs: #3c873a;
+  --clr-icon-sql: #336791;
+  --clr-icon-nextjs: #ffffff;
+
+  /* Contato */
+  --clr-icon-linkedin: #0077b5;
+  --clr-icon-email: #30e88f;
+  --clr-icon-telegram: #229ed9;
+
+  /* Configurações */
+  --cfg-box-shadow: 0 0 10px #00ffc3, 0 0 20px #00ffc3, 0 0 30px #00ffc3;
+  --cfg-border-radius: 16px;
+  --cfg-blur: 24px;
+}

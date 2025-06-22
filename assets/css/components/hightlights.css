@@ -1,0 +1,9 @@
+.c-hightlights {
+  display: flex;
+  gap: 10px;
+
+  width: 100vw;
+
+  padding: 50px 30px;
+  overflow-x: scroll;
+}

@@ -29,7 +29,7 @@
   width: 10%;
   height: 100%;
   background-color: var(--clr-fourth);
-  box-shadow: 2px 2px 2px 2px var(--clr-box-shadow);
+  box-shadow: var(--cfg-box-shadow);
   border-radius: var(--cfg-border-radius);
   transition: width 700ms;
 }
@@ -44,7 +44,9 @@
   font-size: 0;
   width: 90%;
   overflow-y: scroll;
-  transition: font-size 400ms, opacity 800ms;
+  transition:
+    font-size 400ms,
+    opacity 800ms;
 }
 
 .c-grid__card:hover .c-grid__text {
