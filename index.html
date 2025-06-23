@@ -275,15 +275,27 @@
                 title="Toggle theme "
                 tabindex="0"
               >
-                <option translate-key="cappuccino-theme" value="Cappuccino">
+                <option
+                  translate-key="nuovo-moderno-theme"
+                  value="nuovo-moderno-theme"
+                >
+                  ☕ &nbsp;nuovo stile moderno theme
+                </option>
+                <option
+                  translate-key="cappuccino-theme"
+                  value="cappuccino-theme"
+                >
                   ☕ &nbsp;Cappuccino theme
                 </option>
-                <option translate-key="cioccolato-theme" value="Cioccolato">
+                <option
+                  translate-key="cioccolato-theme"
+                  value="cioccolato-theme"
+                >
                   🍫 &nbsp;Cioccolato theme
                 </option>
                 <option
                   translate-key="high-contrast-theme"
-                  value="High-contrast"
+                  value="high-contrast-theme"
                 >
                   👁️‍🗨️ &nbsp;High-contrast theme
                 </option>
@@ -323,7 +335,7 @@
           class="u-main-title u-margin u-mobile__container u-mobile__center"
         >
           <p translate-key="home-phrase">What can I do for you?</p>
-          <span>
+          <span id="typed-wrapper">
             <strong id="c-typed-word" class="u-highlight-color"></strong>
           </span>
         </aside>
@@ -410,9 +422,14 @@
         id="about"
         class="u-row-container u-space-between u-padding u-mobile__center"
       >
-        <article class="c-textBoard u-center u-margin u-column-container">
+        <article
+          class="c-textBoard c-about-textBoard u-center u-margin u-column-container"
+        >
           <header class="u-column-container u-center">
-            <h1 translate-key="about-section-title" class="u-title u-margin">
+            <h1
+              translate-key="about-section-title"
+              class="u-title u-center-text u-margin"
+            >
               About me
             </h1>
             <span id="c-textBoard__switches">
@@ -725,7 +742,7 @@
         </article>
       </section>
       <section id="certs" class="c-skills u-column-container u-center">
-        <article>
+        <article class="u-column-container u-center">
           <header class="u-center-text">
             <h1 class="u-title u-center-text" translate-key="certs-word">
               Certifications

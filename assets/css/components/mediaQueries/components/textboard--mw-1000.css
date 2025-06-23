@@ -1,5 +1,10 @@
 .c-textBoard {
-  width: 95vw;
+  width: fit-content;
   padding: 20px;
   padding-left: 50px;
+}
+
+.c-about-textBoard {
+  height: 800px;
+  text-align: left;
 }
