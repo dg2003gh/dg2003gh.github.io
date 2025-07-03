@@ -10,5 +10,8 @@ if (parts.length > 2) {
     case "cloud-analyzer":
       window.location.href = "https://dg2003gh.github.io/simple-cloud-analyzer";
       break;
+    case "cursos":
+      window.location.href = "https://dg2003gh.github.io/cursos-site";
+      break;
   }
 }
